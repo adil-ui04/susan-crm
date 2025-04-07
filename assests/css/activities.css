@@ -13,7 +13,7 @@ select {
 }
 .activities_grid {
 	display: flex;
-	gap: 7px;
+	gap: 20px;
 }
 .activities_tab {
 	background-color: #fff;
@@ -113,10 +113,6 @@ select {
 	font-weight: 400 !important;
 }
 
-.section {
-	margin-bottom: 30px;
-}
-
 .divider {
 	border-top: 1px solid #e0e0e0;
 	margin: 20px 0;
@@ -146,6 +142,7 @@ h2 {
 
 .item-name {
 	flex-grow: 1;
+	font-weight: 400 !important;
 }
 
 .--list_bg {
