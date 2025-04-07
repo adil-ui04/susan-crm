@@ -1,0 +1,125 @@
+.deal_card {
+  display: flex;
+  gap: 20px;
+}
+
+.dealcard_title h3 {
+  font-size: 14px;
+  color: var(--black);
+}
+.--deal_m1 p,
+.--deal_m2 p {
+  font-size: 12px;
+  color: var(--smtext);
+  font-weight: 400 !important;
+}
+.--deal_m1 {
+  width: 421px;
+}
+.--deal_m2 {
+  width: 220px;
+}
+
+.--deals_tab {
+  margin: 20px 0px;
+}
+
+.deal-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.aaa {
+  display: flex;
+  gap: 20px;
+}
+
+.deal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.deal-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.deal-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+.--deal-bar {
+  height: 10px;
+  margin-bottom: 10px;
+}
+.deal-badge {
+  font-size: 0.8rem;
+  background-color: #e9edf7;
+  color: #34495e;
+  padding: 4px 8px;
+  border-radius: 99px;
+  display: inline-block;
+}
+
+.deal-header-right {
+  text-align: right;
+}
+
+.deal-amount {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.deal-probability {
+  display: block;
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 2px;
+}
+
+.deal-subtitle {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.deal-info {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 16px;
+}
+
+.deal-info-item {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.deal-info-item span {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.deal-description {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.--deal-btn {
+  margin-left: auto;
+  background-color: white;
+  color: black;
+  border: 1px solid var(--lightgreen);
+  display: flex;
+}

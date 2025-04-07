@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="common_title">
+        <div>
+            <h3>Deals Pipeline</h3>
+            <p>Manage and track deals in your sales pipeline</p>
+        </div>
+        <div class="pro_btn">
+            <button class="comm_btn --btn_white"> <img src="assests/images/icons/filter.svg" alt="filter">
+                Filter</button>
+            <button class="comm_btn --btn_white"> <img src="assests/images/icons/report.svg"
+                    alt="refresh">Report</button>
+            <button class="comm_btn">
+                <img src="assests/images/icons/plus.svg" alt="add">
+                New Deal
+            </button>
+        </div>
+    </section>
+
+    <section class="deal_card dashboard_card">
+
+        <div class="dashcard_main --deal_m1">
+            <div class="dealcard_title">
+                <h3>Total Pipeline Value</h3>
+            </div>
+
+            <h1>$3,105,000</h1>
+            <p>Across all deal stages</p>
+        </div>
+        <div class="dashcard_main --deal_m2">
+            <div class="dealcard_title">
+                <h3>Closing Stage</h3>
+            </div>
+
+            <h1>$320,500</h1>
+            <p>High probability deals</p>
+        </div>
+        <div class="dashcard_main --deal_m2">
+            <div class="dealcard_title">
+                <h3>Negotiation</h3>
+            </div>
+
+            <h1>$227,000</h1>
+            <p>Finalizing terms</p>
+        </div>
+        <div class="dashcard_main --deal_m2">
+            <div class="dealcard_title">
+                <h3>Proposal</h3>
+            </div>
+
+            <h1>$540,000</h1>
+            <p>Solution proposed</p>
+        </div>
+        <div class="dashcard_main --deal_m2">
+            <div class="dealcard_title">
+                <h3>Early Stage</h3>
+            </div>
+
+            <h1>$2,017,500</h1>
+            <p>Prospecting/Qualification</p>
+        </div>
+    </section>
+
+    <section class="prospect_tab --deals_tab">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button"
+                    role="tab" aria-controls="all" aria-selected="true">
+                    All Prospects
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="new-tab" data-bs-toggle="tab" data-bs-target="#new" type="button"
+                    role="tab" aria-controls="new" aria-selected="false">
+                    New
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contacted-tab" data-bs-toggle="tab" data-bs-target="#contacted"
+                    type="button" role="tab" aria-controls="contacted" aria-selected="false">
+                    Contacted
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="qualified-tab" data-bs-toggle="tab" data-bs-target="#qualified"
+                    type="button" role="tab" aria-controls="qualified" aria-selected="false">
+                    Qualified
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="proposal-tab" data-bs-toggle="tab" data-bs-target="#proposal" type="button"
+                    role="tab" aria-controls="proposal" aria-selected="false">
+                    Proposal
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="negotiation-tab" data-bs-toggle="tab" data-bs-target="#negotiation"
+                    type="button" role="tab" aria-controls="negotiation" aria-selected="false">
+                    Negotiation
+                </button>
+            </li>
+        </ul>
+
+        <!-- Tab content -->
+        <div class="tab-content m_top" id="myTabContent">
+            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+
+                <div class="deal-card">
+                    <div class="aaa">
+
+                        <div class="clients_badge">BH</div>
+                        <section>
+                            <div class="deal-header">
+                                <div class="deal-header-left">
+                                    <div class="deal-title">ESG Integration</div>
+                                    <div class="deal-badge">Qualification</div>
+                                </div>
+                                <div class="deal-header-right">
+                                    <div class="deal-amount">$1,142,100</div>
+                                    <div class="deal-probability">35% probability</div>
+                                </div>
+                            </div>
+                            <div class="deal-subtitle">Vanguard Global - Investment Management</div>
+                            <div class="progress-bar --deal-bar">
+                                <div class="progress" style="width: 60%;"></div>
+                            </div>
+                            <div class="deal-info">
+                                <div class="deal-info-item">
+                                    <span>Expected Close</span>
+                                    May 16, 2025
+                                </div>
+                                <div class="deal-info-item">
+                                    <span>Timeline</span>
+                                    30 days left
+                                </div>
+                            </div>
+                            <div class="deal-description">
+                                Needs assessment completed, discussing investment criteria.
+                            </div>
+                        </section>
+
+                    </div>
+
+
+
+                    <button class="comm_btn --deal-btn">View All Tasks</button>
+                </div>
+                <!--  -->
+
+
+
+
+            </div>
+            <div class="tab-pane fade" id="new" role="tabpanel" aria-labelledby="new-tab">
+                <p class="mt-3">Content for New prospects.</p>
+            </div>
+            <div class="tab-pane fade" id="contacted" role="tabpanel" aria-labelledby="contacted-tab">
+                <p class="mt-3">Content for Contacted prospects.</p>
+            </div>
+            <div class="tab-pane fade" id="qualified" role="tabpanel" aria-labelledby="qualified-tab">
+                <p class="mt-3">Content for Qualified prospects.</p>
+            </div>
+            <div class="tab-pane fade" id="proposal" role="tabpanel" aria-labelledby="proposal-tab">
+                <p class="mt-3">Content for Proposal prospects.</p>
+            </div>
+            <div class="tab-pane fade" id="negotiation" role="tabpanel" aria-labelledby="negotiation-tab">
+                <p class="mt-3">Content for Negotiation prospects.</p>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+</body>
+
+</html>

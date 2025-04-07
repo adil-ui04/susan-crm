@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assests/css/common.css">
+    <link rel="stylesheet" href="assests/css/header.css">
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" href="assests/css/client.css">
+    <link rel="stylesheet" href="assests/css/prospect.css">
+    <link rel="stylesheet" href="assests/css/deals.css">
+    <link rel="stylesheet" href="assests/css/activities.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.4/css/responsive.dataTables.css">
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <ul class="nav-links">
+            <div class="search-container --nav_search">
+                <input type="search" class="search-input --nav_search_inp" id="nav-search" placeholder="Search..."
+                    autocomplete="off">
+                <img src="assests/images/icons/searchs.svg" alt="Search Icon" width="20px" class="search-icon">
+            </div>
+            <li>
+                <a class="link_name" data-page="dashboard.html">
+                    <!-- <img src="assests/images/icons/fm.svg" alt="fund master " width="18px"> -->
+                    <span class="link_name">Dashboard</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" data-page="dashboard.html">Dashboard</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="link_name" data-page="client.html">
+                    <!-- <img src="assests/images/icons/frm.svg" alt="fund rep" width="18px"> -->
+                    <span class="link_name">Clients</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" data-page="client.html">Clients</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="link_name" id="checklist_btn" data-page="prospect.html">
+                    <!-- <img src="assests/images/icons/cm.svg" alt="company master" width="18px"> -->
+                    <span class="link_name">Prospects</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" data-page="prospect.html">Prospects</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="link_name" id="checklist_btn" data-page="deals.html">
+                    <!-- <img src="assests/images/icons/crm.svg" alt="company rep" width="18px"> -->
+                    <span class="link_name">Deals</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" data-page="deals.html">Deals</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="link_name" id="checklist_btn" data-page="activities.html">
+                    <!-- <img src="assests/images/icons/add-fund.svg" alt="Add Fund" width="18px"> -->
+                    <span class="link_name">Activities</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" data-page="activities.html">Activities</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="link_name" id="checklist_btn" data-page="tasks.html">
+                    <!-- <img src="assests/images/icons/fund-manager.svg" alt="Fund Manager" width="18px"> -->
+                    <span class="link_name">Tasks</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" data-page="tasks.html">Tasks</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="link_name" id="checklist_btn" data-page="meeting.html">
+                    <!-- <img src="assests/images/icons/meeting.svg" alt="Fund Manager" width="18px"> -->
+                    <span class="link_name">Meetings</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" data-page="meeting.html">Meetings</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="link_name" id="checklist_btn" data-page="fund-manager.html">
+                    <!-- <img src="assests/images/icons/fund-manager.svg" alt="Fund Manager" width="18px"> -->
+                    <span class="link_name">Calls</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" data-page="fund-manager.html">Calls</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="link_name" id="checklist_btn" data-page="fund-manager.html">
+                    <!-- <img src="assests/images/icons/fund-manager.svg" alt="Fund Manager" width="18px"> -->
+                    <span class="link_name">Reports</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" data-page="fund-manager.html">Reports</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="link_name" id="checklist_btn" data-page="fund-manager.html">
+                    <!-- <img src="assests/images/icons/fund-manager.svg" alt="Fund Manager" width="18px"> -->
+                    <span class="link_name">Research Notes</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" data-page="fund-manager.html">Research Notes</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <section class="home-section">
+        <div class="home-content">
+            <i class='bx bx-menu' id="ham-search"><img src="assests/images/icons/hamburger.svg" alt="hamburger"
+                    width="40px"></i>
+            <img src="assests/images/susan.png" alt="susan" width="200px" class="brand_logo">
+            <div class="super_admin_text">
+                <p>Super Admin</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="page_container">
+        <div class="content-container" id="content-container">
+            <!-- Content will be loaded here dynamically -->
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.4/js/dataTables.responsive.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
+    <script src="assests/js/main.js"></script>
+    <script src="assests/js/header.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            // Load default page on initial load
+            loadPage("activities.html");
+
+            // Handle navigation link clicks
+            $(".nav-links a").click(function (e) {
+                e.preventDefault();
+                var page = $(this).data("page");
+                if (page) {
+                    loadPage(page); // Load the page content into the container
+                }
+            });
+
+            function loadPage(page) {
+                $.ajax({
+                    url: page,
+                    method: "GET",
+                    success: function (response) {
+                        $("#content-container").html(response);
+                        initializeDataTables();
+                        initializeDynamicElements();
+
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("Error loading page:", error);
+                        $("#content-container").html("<p>Error loading page. Please try again.</p>");
+                    }
+                });
+            }
+            function initializeDataTables() {
+                $(".DataTable").DataTable({
+                    responsive: true,
+                    ordering: false,
+                    language: {
+                        searchPlaceholder: "Search...",
+                        search: "",
+                    },
+                });
+
+            }
+            // Handle AJAX links in tables
+            $(document).on("click", ".ajax-link", function (e) {
+                e.preventDefault();
+                var page = $(this).data("page");
+                if (page) {
+                    loadPage(page);
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

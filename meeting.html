@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="common_title">
+        <div>
+            <h3>Meetings</h3>
+            <p>Schedule and manage client meetings</p>
+        </div>
+        <div>
+            <button class="comm_btn">+Schedule Meeting</button>
+        </div>
+    </section>
+    <div class="activities_grid">
+        <section class="activities_tab">
+            <h4>Task Management</h4>
+            <p>Manage and complete your tasks</p>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs " id="myTab" role="tablist">
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all"
+                        type="button" role="tab" aria-controls="all" aria-selected="true">
+                        Upcoming
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="new-tab" data-bs-toggle="tab" data-bs-target="#new" type="button"
+                        role="tab" aria-controls="new" aria-selected="false">
+                        Today
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contacted-tab" data-bs-toggle="tab" data-bs-target="#contacted"
+                        type="button" role="tab" aria-controls="contacted" aria-selected="false">
+                        This Week
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contacted-tab" data-bs-toggle="tab" data-bs-target="#contacted"
+                        type="button" role="tab" aria-controls="contacted" aria-selected="false">
+                        This Month
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contacted-tab" data-bs-toggle="tab" data-bs-target="#contacted"
+                        type="button" role="tab" aria-controls="contacted" aria-selected="false">
+                        Past
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contacted-tab" data-bs-toggle="tab" data-bs-target="#contacted"
+                        type="button" role="tab" aria-controls="contacted" aria-selected="false">
+                        All
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Tab content -->
+            <div class="tab-content m_top" id="myTabContent">
+                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                    <section class="activity_grid">
+                        <div>
+                            <div class="activity_main task_main">
+                                <div>
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                                <div>
+                                    <p>No meetings found</p>
+                                </div>
+                                <div>
+                                    <button class="comm_btn">+ Schedule your first meeting</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+
+
+                </div>
+                <div class="tab-pane fade" id="new" role="tabpanel" aria-labelledby="new-tab">
+                    <p class="mt-3">Content for New prospects.</p>
+                </div>
+                <div class="tab-pane fade" id="contacted" role="tabpanel" aria-labelledby="contacted-tab">
+                    <p class="mt-3">Content for Contacted prospects.</p>
+                </div>
+                <div class="tab-pane fade" id="qualified" role="tabpanel" aria-labelledby="qualified-tab">
+                    <p class="mt-3">Content for Qualified prospects.</p>
+                </div>
+                <div class="tab-pane fade" id="proposal" role="tabpanel" aria-labelledby="proposal-tab">
+                    <p class="mt-3">Content for Proposal prospects.</p>
+                </div>
+                <div class="tab-pane fade" id="negotiation" role="tabpanel" aria-labelledby="negotiation-tab">
+                    <p class="mt-3">Content for Negotiation prospects.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="summary_container">
+                <h3>Meeting Stats</h3>
+
+
+                <div class="section">
+                    <ul class="list abc">
+                        <p>Today's Meetings</p>
+                        <li class="list-item">
+
+                            <span class="item-name">0</span>
+                            <span class="item-count">logo</span>
+                        </li>
+
+                    </ul>
+                    <ul class="list abc">
+                        <p>Today's Meetings</p>
+                        <li class="list-item">
+
+                            <span class="item-name">0</span>
+                            <span class="item-count">logo</span>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="summary_container">
+                <h3>Client Engagement</h3>
+                <p>Meeting frequency by client</p>
+
+                <div class="section">
+
+
+                    <ul class="list">
+                        <li class="list-item">
+                            <input type="radio" class="checkbox">
+                            <span class="item-name">High Priority</span>
+                            <span class="item-count">1</span>
+                        </li>
+                        <li class="list-item">
+                            <input type="radio" class="checkbox">
+                            <span class="client-code">VG</span>
+                            <span class="item-name">Medium Priority</span>
+                            <span class="item-count">1</span>
+                        </li>
+                        <li class="list-item">
+                            <input type="radio" class="checkbox">
+                            <span class="item-name">Low Priority</span>
+                            <span class="item-count">1</span>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>
