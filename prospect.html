@@ -25,257 +25,249 @@
         </div>
     </section>
     <section class="prospect_tab">
+        <!-- tab -->
+        <div class="unitab-container --pro_container">
+            <div class="unitab active" data-tab="all">
+                <div class="count_flex">
+                    All Prospects
+                    <div class="clients_badge --pro_badge">5</div>
+                </div>
+            </div>
+            <div class="unitab" data-tab="new">
+                <div class="count_flex">
+                    New
+                    <div class="clients_badge --pro_badge">5</div>
+                </div>
+            </div>
+            <div class="unitab" data-tab="contacted">
+                <div class="count_flex">
+                    Contacted
+                    <div class="clients_badge --pro_badge">5</div>
+                </div>
+            </div>
+            <div class="unitab" data-tab="qualified">
+                <div class="count_flex">
+                    Qualified
+                    <div class="clients_badge --pro_badge">5</div>
+                </div>
+            </div>
+            <div class="unitab" data-tab="proposal">
+                <div class="count_flex">
+                    Proposal
+                    <div class="clients_badge --pro_badge">5</div>
+                </div>
+            </div>
+            <div class="unitab" data-tab="negotiation">
+                <div class="count_flex">
+                    Negotiation
+                    <div class="clients_badge --pro_badge">5</div>
+                </div>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="unitab-content active" id="all">
 
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs --pro_tab" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button"
-                    role="tab" aria-controls="all" aria-selected="true">
-                    <div class="count_flex">
-                        All Prospects
-                        <div class="clients_badge --pro_badge">5</div>
-                    </div>
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="new-tab" data-bs-toggle="tab" data-bs-target="#new" type="button"
-                    role="tab" aria-controls="new" aria-selected="false">
-                    <div class="count_flex">
-                        New
-                        <div class="clients_badge --pro_badge">5</div>
-                    </div>
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="contacted-tab" data-bs-toggle="tab" data-bs-target="#contacted"
-                    type="button" role="tab" aria-controls="contacted" aria-selected="false">
-                    <div class="count_flex">
-                        Contacted
-                        <div class="clients_badge --pro_badge">5</div>
-                    </div>
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="qualified-tab" data-bs-toggle="tab" data-bs-target="#qualified"
-                    type="button" role="tab" aria-controls="qualified" aria-selected="false">
-                    <div class="count_flex">
-                        Qualified
-                        <div class="clients_badge --pro_badge">5</div>
-                    </div>
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="proposal-tab" data-bs-toggle="tab" data-bs-target="#proposal" type="button"
-                    role="tab" aria-controls="proposal" aria-selected="false">
-                    <div class="count_flex">
-                        Proposal
-                        <div class="clients_badge --pro_badge">5</div>
-                    </div>
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="negotiation-tab" data-bs-toggle="tab" data-bs-target="#negotiation"
-                    type="button" role="tab" aria-controls="negotiation" aria-selected="false">
-                    <div class="count_flex">
-                        Negotiation
-                        <div class="clients_badge --pro_badge">5</div>
-                    </div>
-                </button>
-            </li>
-        </ul>
+            <section class="prospect_main">
+                <div class="clients_header --prospect_header">
+                    <div class="clients_badge">MR</div>
+                    <div>
+                        <h3>Michael Reynolds</h3>
+                        <p>Head of Alternative Investments</p>
+                        <strong>Wellington Management</strong>
 
-        <!-- Tab content -->
-        <div class="tab-content m_top" id="myTabContent">
-            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
-
-                <section class="prospect_main">
-                    <div class="clients_header --prospect_header">
-                        <div class="clients_badge">MR</div>
-                        <div>
-                            <h3>Michael Reynolds</h3>
-                            <p>Head of Alternative Investments</p>
-                            <strong>Wellington Management</strong>
-
-                            <div class="prospect-details">
-                                <div class="pro1">
-                                    <span>Source: <strong>Conference</strong> </span>
-                                    <span>Created: <strong>Mar 18, 2025</strong></span>
-                                </div>
-                                <div class="pro1">
-                                    <span>Probability: <strong>30%</strong> </span>
-                                    <span>Last Contact: <strong>N/A</strong></span>
-                                </div>
+                        <div class="prospect-details">
+                            <div class="pro1">
+                                <span>Source: <strong>Conference</strong> </span>
+                                <span>Created: <strong>Mar 18, 2025</strong></span>
                             </div>
-                            <div class="pro_p">
-                                <p>Est. Value: <strong>$2,000,000</strong> </p>
-                                <p>Next Follow Up: <strong>Apr 4, 2025</strong> </p>
-                            </div>
-
-                            <div class="pnotes">
-                                <span class=" c_badge --pnt">tech-focus</span>
-                                <span class="c_badge --pnt">alternatives</span>
-                            </div>
-
-                        </div>
-                        <span class="c_badge" style="background: #3b82f6;">New</span>
-                    </div>
-                </section>
-
-                <section class="prospect_main">
-                    <div class="clients_header --prospect_header">
-                        <div class="clients_badge">SC</div>
-                        <div>
-                            <h3>Sarah Chen</h3>
-                            <p>Portfolio Manager</p>
-                            <strong>Bridgewater Associates</strong>
-
-                            <div class="prospect-details">
-                                <div class="pro1">
-                                    <span>Source: <strong>Referral</strong> </span>
-                                    <span>Created: <strong>Mar 18, 2025</strong></span>
-                                </div>
-                                <div class="pro1">
-                                    <span>Probability: <strong>45%</strong> </span>
-                                    <span>Last Contact: <strong>Mar 29, 2025</strong></span>
-                                </div>
-                            </div>
-                            <div class="pro_p">
-                                <p>Est. Value: <strong>$1,200,000</strong> </p>
-                                <p>Next Follow Up: <strong>Apr 6, 2025</strong> </p>
-                            </div>
-
-                            <div class="pnotes">
-                                <span class="c_badge --pnt">esg-interest</span>
-                                <span class="c_badge --pnt">high-value</span>
+                            <div class="pro1">
+                                <span>Probability: <strong>30%</strong> </span>
+                                <span>Last Contact: <strong>N/A</strong></span>
                             </div>
                         </div>
-                        <span class="c_badge">Contacted</span>
+                        <div class="pro_p">
+                            <p>Est. Value: <strong>$2,000,000</strong> </p>
+                            <p>Next Follow Up: <strong>Apr 4, 2025</strong> </p>
+                        </div>
+
+                        <div class="pnotes">
+                            <span class=" c_badge --pnt">tech-focus</span>
+                            <span class="c_badge --pnt">alternatives</span>
+                        </div>
+
                     </div>
-                </section>
+                    <span class="c_badge" style="background: #3b82f6;">New</span>
+                </div>
+            </section>
 
+            <section class="prospect_main">
+                <div class="clients_header --prospect_header">
+                    <div class="clients_badge">SC</div>
+                    <div>
+                        <h3>Sarah Chen</h3>
+                        <p>Portfolio Manager</p>
+                        <strong>Bridgewater Associates</strong>
 
-                <section class="prospect_main">
-                    <div class="clients_header --prospect_header">
-                        <div class="clients_badge">DP</div>
-                        <div>
-                            <h3>David Patel</h3>
-                            <p>Senior Investment Officer</p>
-                            <strong>T. Rowe Price</strong>
-
-                            <div class="prospect-details">
-                                <div class="pro1">
-                                    <span>Source: <strong>LinkedIn</strong> </span>
-                                    <span>Created: <strong>Mar 11, 2025</strong></span>
-                                </div>
-                                <div class="pro1">
-                                    <span>Probability: <strong>60%</strong> </span>
-                                    <span>Last Contact: <strong>Mar 27, 2025</strong></span>
-                                </div>
+                        <div class="prospect-details">
+                            <div class="pro1">
+                                <span>Source: <strong>Referral</strong> </span>
+                                <span>Created: <strong>Mar 18, 2025</strong></span>
                             </div>
-                            <div class="pro_p">
-                                <p>Est. Value: <strong>$880,000</strong> </p>
-                                <p>Next Follow Up: <strong>Apr 3, 2025</strong> </p>
-                            </div>
-
-                            <div class="pnotes">
-                                <span class="c_badge --pnt">healthcare</span>
-                                <span class="c_badge --pnt">sector-specific</span>
+                            <div class="pro1">
+                                <span>Probability: <strong>45%</strong> </span>
+                                <span>Last Contact: <strong>Mar 29, 2025</strong></span>
                             </div>
                         </div>
-                        <span class="c_badge" style="background-color: #22c55e;">Qualified</span>
+                        <div class="pro_p">
+                            <p>Est. Value: <strong>$1,200,000</strong> </p>
+                            <p>Next Follow Up: <strong>Apr 6, 2025</strong> </p>
+                        </div>
+
+                        <div class="pnotes">
+                            <span class="c_badge --pnt">esg-interest</span>
+                            <span class="c_badge --pnt">high-value</span>
+                        </div>
                     </div>
-                </section>
+                    <span class="c_badge">Contacted</span>
+                </div>
+            </section>
 
 
-                <section class="prospect_main">
-                    <div class="clients_header --prospect_header">
-                        <div class="clients_badge">JM</div>
-                        <div>
-                            <h3>Jennifer Martinez</h3>
-                            <p>Director of Fixed Income</p>
-                            <strong>AllianceBernstein</strong>
+            <section class="prospect_main">
+                <div class="clients_header --prospect_header">
+                    <div class="clients_badge">DP</div>
+                    <div>
+                        <h3>David Patel</h3>
+                        <p>Senior Investment Officer</p>
+                        <strong>T. Rowe Price</strong>
 
-                            <div class="prospect-details">
-                                <div class="pro1">
-                                    <span>Source: <strong>Website</strong> </span>
-                                    <span>Created: <strong>Mar 2, 2025</strong></span>
-                                </div>
-                                <div class="pro1">
-                                    <span>Probability: <strong>75%</strong> </span>
-                                    <span>Last Contact: <strong>Mar 30, 2025</strong></span>
-                                </div>
+                        <div class="prospect-details">
+                            <div class="pro1">
+                                <span>Source: <strong>LinkedIn</strong> </span>
+                                <span>Created: <strong>Mar 11, 2025</strong></span>
                             </div>
-                            <div class="pro_p">
-                                <p>Est. Value: <strong>$950,000</strong> </p>
-                                <p>Next Follow Up: <strong>Apr 5, 2025</strong> </p>
-                            </div>
-
-                            <div class="pnotes">
-                                <span class="c_badge --pnt">fixed-income</span>
-                                <span class="c_badge --pnt">analytics</span>
+                            <div class="pro1">
+                                <span>Probability: <strong>60%</strong> </span>
+                                <span>Last Contact: <strong>Mar 27, 2025</strong></span>
                             </div>
                         </div>
-                        <span class="c_badge" style="background-color: #f59e0b;">Proposal</span>
+                        <div class="pro_p">
+                            <p>Est. Value: <strong>$880,000</strong> </p>
+                            <p>Next Follow Up: <strong>Apr 3, 2025</strong> </p>
+                        </div>
+
+                        <div class="pnotes">
+                            <span class="c_badge --pnt">healthcare</span>
+                            <span class="c_badge --pnt">sector-specific</span>
+                        </div>
                     </div>
-                </section>
+                    <span class="c_badge" style="background-color: #22c55e;">Qualified</span>
+                </div>
+            </section>
 
 
-                <section class="prospect_main">
-                    <div class="clients_header --prospect_header">
-                        <div class="clients_badge">RT</div>
-                        <div>
-                            <h3>Robert Thompson</h3>
-                            <p>Executive Director</p>
-                            <strong>PIMCO</strong>
+            <section class="prospect_main">
+                <div class="clients_header --prospect_header">
+                    <div class="clients_badge">JM</div>
+                    <div>
+                        <h3>Jennifer Martinez</h3>
+                        <p>Director of Fixed Income</p>
+                        <strong>AllianceBernstein</strong>
 
-                            <div class="prospect-details">
-                                <div class="pro1">
-                                    <span>Source: <strong>Cold Call</strong> </span>
-                                    <span>Created: <strong>Feb 15, 2025</strong></span>
-                                </div>
-                                <div class="pro1">
-                                    <span>Probability: <strong>85%</strong> </span>
-                                    <span>Last Contact: <strong>Mar 31, 2025</strong></span>
-                                </div>
+                        <div class="prospect-details">
+                            <div class="pro1">
+                                <span>Source: <strong>Website</strong> </span>
+                                <span>Created: <strong>Mar 2, 2025</strong></span>
                             </div>
-                            <div class="pro_p">
-                                <p>Est. Value: <strong>$1,350,000</strong> </p>
-                                <p>Next Follow Up: <strong>Apr 2, 2025</strong> </p>
-                            </div>
-
-                            <div class="pnotes">
-                                <span class="c_badge --pnt">high-value</span>
-                                <span class="c_badge --pnt">near-close</span>
+                            <div class="pro1">
+                                <span>Probability: <strong>75%</strong> </span>
+                                <span>Last Contact: <strong>Mar 30, 2025</strong></span>
                             </div>
                         </div>
-                        <span class="c_badge" style="background-color: #f97316;">Negotiation</span>
+                        <div class="pro_p">
+                            <p>Est. Value: <strong>$950,000</strong> </p>
+                            <p>Next Follow Up: <strong>Apr 5, 2025</strong> </p>
+                        </div>
+
+                        <div class="pnotes">
+                            <span class="c_badge --pnt">fixed-income</span>
+                            <span class="c_badge --pnt">analytics</span>
+                        </div>
                     </div>
-                </section>
+                    <span class="c_badge" style="background-color: #f59e0b;">Proposal</span>
+                </div>
+            </section>
 
 
+            <section class="prospect_main">
+                <div class="clients_header --prospect_header">
+                    <div class="clients_badge">RT</div>
+                    <div>
+                        <h3>Robert Thompson</h3>
+                        <p>Executive Director</p>
+                        <strong>PIMCO</strong>
 
-            </div>
-            <div class="tab-pane fade" id="new" role="tabpanel" aria-labelledby="new-tab">
-                <p class="mt-3">Content for New prospects.</p>
-            </div>
-            <div class="tab-pane fade" id="contacted" role="tabpanel" aria-labelledby="contacted-tab">
-                <p class="mt-3">Content for Contacted prospects.</p>
-            </div>
-            <div class="tab-pane fade" id="qualified" role="tabpanel" aria-labelledby="qualified-tab">
-                <p class="mt-3">Content for Qualified prospects.</p>
-            </div>
-            <div class="tab-pane fade" id="proposal" role="tabpanel" aria-labelledby="proposal-tab">
-                <p class="mt-3">Content for Proposal prospects.</p>
-            </div>
-            <div class="tab-pane fade" id="negotiation" role="tabpanel" aria-labelledby="negotiation-tab">
-                <p class="mt-3">Content for Negotiation prospects.</p>
-            </div>
+                        <div class="prospect-details">
+                            <div class="pro1">
+                                <span>Source: <strong>Cold Call</strong> </span>
+                                <span>Created: <strong>Feb 15, 2025</strong></span>
+                            </div>
+                            <div class="pro1">
+                                <span>Probability: <strong>85%</strong> </span>
+                                <span>Last Contact: <strong>Mar 31, 2025</strong></span>
+                            </div>
+                        </div>
+                        <div class="pro_p">
+                            <p>Est. Value: <strong>$1,350,000</strong> </p>
+                            <p>Next Follow Up: <strong>Apr 2, 2025</strong> </p>
+                        </div>
+
+                        <div class="pnotes">
+                            <span class="c_badge --pnt">high-value</span>
+                            <span class="c_badge --pnt">near-close</span>
+                        </div>
+                    </div>
+                    <span class="c_badge" style="background-color: #f97316;">Negotiation</span>
+                </div>
+            </section>
+        </div>
+        <div class="unitab-content" id="new">
+            new
+        </div>
+        <div class="unitab-content" id="contacted">
+            contact
+        </div>
+        <div class="unitab-content" id="qualified">
+            qualified
+        </div>
+        <div class="unitab-content" id="proposal">
+            proposal
+        </div>
+        <div class="unitab-content" id="negotiation">
+            Negotiation
         </div>
 
 
-
-
     </section>
+
+
+
+    <script>
+        const tabs = document.querySelectorAll('.unitab');
+        const contents = document.querySelectorAll('.unitab-content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                contents.forEach(c => c.classList.remove('active'));
+
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.tab).classList.add('active');
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>
