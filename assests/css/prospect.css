@@ -1,7 +1,9 @@
 .tab-content {
   padding-bottom: 50px;
 }
-
+.--pro_container {
+  margin-left: 120px;
+}
 .--btn_white {
   background-color: var(--white);
   color: var(--black);

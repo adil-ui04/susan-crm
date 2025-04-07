@@ -70,118 +70,41 @@
     </section>
 
     <section class="prospect_tab --deals_tab">
-
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button"
-                    role="tab" aria-controls="all" aria-selected="true">
-                    All Prospects
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="new-tab" data-bs-toggle="tab" data-bs-target="#new" type="button"
-                    role="tab" aria-controls="new" aria-selected="false">
-                    New
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="contacted-tab" data-bs-toggle="tab" data-bs-target="#contacted"
-                    type="button" role="tab" aria-controls="contacted" aria-selected="false">
-                    Contacted
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="qualified-tab" data-bs-toggle="tab" data-bs-target="#qualified"
-                    type="button" role="tab" aria-controls="qualified" aria-selected="false">
-                    Qualified
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="proposal-tab" data-bs-toggle="tab" data-bs-target="#proposal" type="button"
-                    role="tab" aria-controls="proposal" aria-selected="false">
-                    Proposal
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="negotiation-tab" data-bs-toggle="tab" data-bs-target="#negotiation"
-                    type="button" role="tab" aria-controls="negotiation" aria-selected="false">
-                    Negotiation
-                </button>
-            </li>
-        </ul>
-
-        <!-- Tab content -->
-        <div class="tab-content m_top" id="myTabContent">
-            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
-
-                <div class="deal-card">
-                    <div class="aaa">
-
-                        <div class="clients_badge">BH</div>
-                        <section>
-                            <div class="deal-header">
-                                <div class="deal-header-left">
-                                    <div class="deal-title">ESG Integration</div>
-                                    <div class="deal-badge">Qualification</div>
-                                </div>
-                                <div class="deal-header-right">
-                                    <div class="deal-amount">$1,142,100</div>
-                                    <div class="deal-probability">35% probability</div>
-                                </div>
-                            </div>
-                            <div class="deal-subtitle">Vanguard Global - Investment Management</div>
-                            <div class="progress-bar --deal-bar">
-                                <div class="progress" style="width: 60%;"></div>
-                            </div>
-                            <div class="deal-info">
-                                <div class="deal-info-item">
-                                    <span>Expected Close</span>
-                                    May 16, 2025
-                                </div>
-                                <div class="deal-info-item">
-                                    <span>Timeline</span>
-                                    30 days left
-                                </div>
-                            </div>
-                            <div class="deal-description">
-                                Needs assessment completed, discussing investment criteria.
-                            </div>
-                        </section>
-
-                    </div>
-
-
-
-                    <button class="comm_btn --deal-btn">View All Tasks</button>
-                </div>
-                <!--  -->
-
-
-
-
-            </div>
-            <div class="tab-pane fade" id="new" role="tabpanel" aria-labelledby="new-tab">
-                <p class="mt-3">Content for New prospects.</p>
-            </div>
-            <div class="tab-pane fade" id="contacted" role="tabpanel" aria-labelledby="contacted-tab">
-                <p class="mt-3">Content for Contacted prospects.</p>
-            </div>
-            <div class="tab-pane fade" id="qualified" role="tabpanel" aria-labelledby="qualified-tab">
-                <p class="mt-3">Content for Qualified prospects.</p>
-            </div>
-            <div class="tab-pane fade" id="proposal" role="tabpanel" aria-labelledby="proposal-tab">
-                <p class="mt-3">Content for Proposal prospects.</p>
-            </div>
-            <div class="tab-pane fade" id="negotiation" role="tabpanel" aria-labelledby="negotiation-tab">
-                <p class="mt-3">Content for Negotiation prospects.</p>
-            </div>
+        <!-- nav tab-->
+        <div class="unitab-container">
+            <div class="unitab active" data-tab="all">All <span class="badge">5</span></div>
+            <div class="unitab" data-tab="pendings">Pending <span class="badge">1</span></div>
+            <div class="unitab" data-tab="completed">Completed <span class="badge">1</span></div>
         </div>
-
-
-
+        <!-- tab contain -->
+        <div class="unitab-content active" id="all">
+            <h2>All Tasks</h2>
+            <p>This is the content for all tasks.</p>
+        </div>
+        <div class="unitab-content" id="pendings">
+            <h2>Pending Tasks</h2>
+            <p>This is the content for pending tasks.</p>
+        </div>
+        <div class="unitab-content" id="completed">
+            <h2>Completed Tasks</h2>
+            <p>This is the content for completed tasks.</p>
+        </div>
     </section>
 
+    <script>
+        const tabs = document.querySelectorAll('.unitab');
+        const contents = document.querySelectorAll('.unitab-content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                contents.forEach(c => c.classList.remove('active'));
+
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.tab).classList.add('active');
+            });
+        });
+    </script>
 
 </body>
 
