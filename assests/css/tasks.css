@@ -122,3 +122,6 @@ input[type="checkbox"] {
 .tlist_name {
   flex-grow: 1;
 }
+.--tlist2 {
+  font-weight: 400 !important;
+}
