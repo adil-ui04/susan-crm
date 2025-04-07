@@ -15,7 +15,7 @@
             <h3>SUSAN Dashboard</h3>
             <p class="smtext">Institutional Equity Sales Overview</p>
         </div>
-        <div>
+        <div class="flex_container">
             <select class="dash_mr">
                 <option selected="" disabled="">Last 30 days</option>
                 <option>Last quarter</option>
@@ -304,102 +304,106 @@
                 </table>
             </div>
         </section>
+        <div class="box_shadow2">
+            <div class="upcoming_main">
+                <div class="upcoming_header">
+                    <span>Upcoming Tasks</span>
+                    <span class="add_task">Add Task</span>
+                </div>
 
-        <section class="upcoming_main">
-            <div class="upcoming_header">
-                <span>Upcoming Tasks</span>
-                <span class="add_task">Add Task</span>
+                <div class="upcoming_task">
+                    <section class="upcom_main">
+                        <input type="checkbox" name="activity" value="blackrock">
+                        <div>
+                            <strong>Update State Street proposal with new terms</strong>
+                            <p class="smtext">Before team meeting</p>
+                        </div>
+                        <div class="task-date">
+                            <p>Mar 20</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="upcoming_task">
+                    <section class="upcom_main">
+                        <input type="checkbox" name="activity" value="blackrock">
+                        <div class="up_content">
+                            <strong>Schedule quarterly review with Fidelity</strong>
+                            <p class="smtext">Include research team</p>
+                        </div>
+                        <div class="task-date">
+                            <p>Mar 22</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="upcoming_task">
+                    <section class="upcom_main">
+                        <input type="checkbox" name="activity" value="blackrock">
+                        <div class="up_content">
+                            <strong>Follow up on JP Morgan research request </strong>
+                            <p class="smtext">Check with analyst team first</p>
+                        </div>
+                        <div class="task-date">
+                            <p>Mar 24</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="upcoming_task">
+                    <section class="upcom_main">
+                        <input type="checkbox" name="activity" value="blackrock">
+                        <div class="up_content">
+                            <strong>Prepare Q2 performance report for <br> Blackrock</strong>
+
+                        </div>
+                        <div class="task-date" style="background-color: white;">
+                            <p>Today</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="upcoming_task">
+                    <section class="upcom_main">
+                        <input type="checkbox" name="activity" value="blackrock">
+                        <div class="up_content">
+                            <strong>Call Vanguard about new equity offering</strong>
+                            <p class="smtext">Scheduled for 11:30 AM</p>
+                        </div>
+                        <div class="task-date" style="background-color: white;">
+                            <p>Tomorrow</p>
+                        </div>
+                    </section>
+                </div>
+                <hr>
+                <button class="comm_btn --view_btn">View All Tasks</button>
+
             </div>
 
-            <div class="upcoming_task">
-                <section class="upcom_main">
-                    <input type="checkbox" name="activity" value="blackrock">
-                    <div>
-                        <strong>Update State Street proposal with new terms</strong>
-                        <p class="smtext">Before team meeting</p>
+            <div class="box_shadow">
+                <h3>Quick Actions</h3>
+                <div class="quick_container">
+                    <div class="quick_card active">
+                        <span></span>
+                        <p>Add Client</p>
                     </div>
-                    <div class="task-date">
-                        <p>Mar 20</p>
+                    <div class="quick_card inactive">
+                        <span></span>
+                        <p>Schedule Meeting</p>
                     </div>
-                </section>
-            </div>
-            <div class="upcoming_task">
-                <section class="upcom_main">
-                    <input type="checkbox" name="activity" value="blackrock">
-                    <div class="up_content">
-                        <strong>Schedule quarterly review with Fidelity</strong>
-                        <p class="smtext">Include research team</p>
+                    <div class="quick_card">
+                        <span></span>
+                        <p>Create Report</p>
                     </div>
-                    <div class="task-date">
-                        <p>Mar 22</p>
+                    <div class="quick_card">
+                        <span></span>
+                        <p>Send Update</p>
                     </div>
-                </section>
-            </div>
-            <div class="upcoming_task">
-                <section class="upcom_main">
-                    <input type="checkbox" name="activity" value="blackrock">
-                    <div class="up_content">
-                        <strong>Follow up on JP Morgan research request </strong>
-                        <p class="smtext">Check with analyst team first</p>
-                    </div>
-                    <div class="task-date">
-                        <p>Mar 24</p>
-                    </div>
-                </section>
-            </div>
-            <div class="upcoming_task">
-                <section class="upcom_main">
-                    <input type="checkbox" name="activity" value="blackrock">
-                    <div class="up_content">
-                        <strong>Prepare Q2 performance report for <br> Blackrock</strong>
+                </div>
 
-                    </div>
-                    <div class="task-date" style="background-color: white;">
-                        <p>Today</p>
-                    </div>
-                </section>
             </div>
-            <div class="upcoming_task">
-                <section class="upcom_main">
-                    <input type="checkbox" name="activity" value="blackrock">
-                    <div class="up_content">
-                        <strong>Call Vanguard about new equity offering</strong>
-                        <p class="smtext">Scheduled for 11:30 AM</p>
-                    </div>
-                    <div class="task-date" style="background-color: white;">
-                        <p>Tomorrow</p>
-                    </div>
-                </section>
-            </div>
-            <hr>
-            <button class="comm_btn --view_btn">View All Tasks</button>
 
 
-        </section>
-    </div>
-    <!--  -->
-    <section class="quick_main m_top">
-        <h3>Quick Actions</h3>
-        <div class="quick_container">
-            <div class="quick_card active">
-                <span></span>
-                <p>Add Client</p>
-            </div>
-            <div class="quick_card inactive">
-                <span></span>
-                <p>Schedule Meeting</p>
-            </div>
-            <div class="quick_card">
-                <span></span>
-                <p>Create Report</p>
-            </div>
-            <div class="quick_card">
-                <span></span>
-                <p>Send Update</p>
-            </div>
+            </section>
         </div>
+        <!--  -->
 
-    </section>
 </body>
 
 </html>
