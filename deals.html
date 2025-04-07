@@ -72,22 +72,76 @@
     <section class="prospect_tab --deals_tab">
         <!-- nav tab-->
         <div class="unitab-container">
-            <div class="unitab active" data-tab="all">All <span class="badge">5</span></div>
-            <div class="unitab" data-tab="pendings">Pending <span class="badge">1</span></div>
-            <div class="unitab" data-tab="completed">Completed <span class="badge">1</span></div>
+            <div class="unitab active" data-tab="all"> All Deals</div>
+            <div class="unitab" data-tab="new"> Prospecting</div>
+            <div class="unitab" data-tab="Qualification"> Qualification</div>
+            <div class="unitab" data-tab="proposal"> Proposal</div>
+            <div class="unitab" data-tab="negotiation"> Negotiation</div>
+            <div class="unitab" data-tab="closing"> closing</div>
         </div>
         <!-- tab contain -->
         <div class="unitab-content active" id="all">
-            <h2>All Tasks</h2>
-            <p>This is the content for all tasks.</p>
+            <div class="deal-card">
+                <div class="deals_m">
+
+                    <div class="clients_badge">BH</div>
+                    <section class="sec_width">
+                        <div class="deal-header">
+                            <div class="deal-header-left">
+                                <div class="deal-title">ESG Integration</div>
+                                <div class="deal-badge">Qualification</div>
+                            </div>
+                            <div class="deal-header-right">
+                                <div class="deal-amount">$1,142,100</div>
+                                <div class="deal-probability">35% probability</div>
+                            </div>
+                        </div>
+                        <div class="deal-subtitle">Vanguard Global - Investment Management</div>
+                        <div class="progress-bar --deal-bar">
+                            <div class="progress" style="width: 60%;background-color: #3b82f6 !important;"></div>
+                        </div>
+                        <div class="deal-info">
+                            <div class="deal-info-item">
+                                <img src="assests/images/icons/calendar.svg" alt="calendar">
+                                <div>
+                                    <span class="deal_sg">Expected Close</span>
+                                    <span>May 16, 2025</span>
+                                </div>
+
+                            </div>
+                            <div class="deal-info-item">
+                                <img src="assests/images/icons/clock2.svg" alt="clock">
+                                <div>
+                                    <span class="deal_sg">Timeline</span>
+                                    <span> 30 days left</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="deal_desc"> Needs assessment completed, discussing investment criteria.</p>
+                    </section>
+
+                </div>
+
+                <button class="comm_btn --deal-btn">
+                    View Details
+                    <img src="assests/images/icons/right_arrow.svg" alt="add" width="12px">
+                </button>
+            </div>
         </div>
-        <div class="unitab-content" id="pendings">
-            <h2>Pending Tasks</h2>
-            <p>This is the content for pending tasks.</p>
+        <div class="unitab-content" id="new">
+            new
         </div>
-        <div class="unitab-content" id="completed">
-            <h2>Completed Tasks</h2>
-            <p>This is the content for completed tasks.</p>
+        <div class="unitab-content" id="Qualification">
+            Qualification
+        </div>
+        <div class="unitab-content" id="closing">
+            closing
+        </div>
+        <div class="unitab-content" id="proposal">
+            proposal
+        </div>
+        <div class="unitab-content" id="negotiation">
+            negotiation
         </div>
     </section>
 
