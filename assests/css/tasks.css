@@ -115,7 +115,8 @@ input[type="checkbox"] {
   display: flex;
 }
 
-.tlist_item img {
+.tlist_item img,
+.tlist_item2 img {
   width: 15px;
   margin-left: 10px;
 }
