@@ -5,223 +5,232 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        input[type=checkbox] {
-            zoom: 2.5;
-        }
-
-        .abc {
-            background-color: white;
-            border: 1px solid grey;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        .task_main {
-            display: flex;
-            gap: 10px;
-            padding: 20px;
-            border: 1px solid black;
-            margin-bottom: 20px;
-        }
-
-        /* 
-        .abcd {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        } */
-    </style>
+    <link rel="stylesheet" href="assests/css/tasks.css">
 </head>
 
 <body>
     <section class="common_title">
         <div>
             <h3>Tasks</h3>
-            <p>Manage your tasks and to-dos</p>
+            <p class="smtext">Manage your tasks and to-dos</p>
         </div>
         <div>
-            <button class="comm_btn">+ New Task</button>
+            <button class="comm_btn">
+                <img src="assests/images/icons/plus.svg" alt="add">
+                New Task
+            </button>
         </div>
     </section>
     <!--  -->
-    <div class="activities_grid">
-        <section class="activities_tab">
+    <div class="tasks_grid">
+        <section class="tasks_tab">
             <h4>Task Management</h4>
             <p>Manage and complete your tasks</p>
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs " id="myTab" role="tablist">
 
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all"
-                        type="button" role="tab" aria-controls="all" aria-selected="true">
-                        All
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="new-tab" data-bs-toggle="tab" data-bs-target="#new" type="button"
-                        role="tab" aria-controls="new" aria-selected="false">
-                        Pending
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="contacted-tab" data-bs-toggle="tab" data-bs-target="#contacted"
-                        type="button" role="tab" aria-controls="contacted" aria-selected="false">
-                        Completed
-                    </button>
-                </li>
-
-
-
-            </ul>
-
-            <!-- Tab content -->
-            <div class="tab-content m_top" id="myTabContent">
-                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
-                    <section class="activity_grid">
-                        <div>
-                            <div class="activity_main task_main">
-                                <div>
-                                    <input type="checkbox" name="" id="">
-                                </div>
-                                <div>
-                                    <p>Update State Street proposal with new terms</p>
-                                    <p>SM State Street Management </p>
-                                    <p>Before team meeting</p>
-                                    <p>Due: Mar 20, 2023</p>
-                                </div>
-                                <div class="activity_icons">
-                                    <div> Medium</div>
-                                    <div>Overdue</div>
-                                </div>
-                            </div>
-                            <div class="activity_main task_main">
-                                <div>
-                                    <input type="checkbox" name="" id="">
-                                </div>
-                                <div>
-                                    <p>Schedule quarterly review with Fidelity</p>
-                                    <p> Fidelity Investments</p>
-                                    <p>Include research team</p>
-                                    <p>Due: Mar 22, 2023</p>
-                                </div>
-                                <div class="activity_icons">
-                                    <div> Low</div>
-                                    <div>Overdue</div>
-                                </div>
-                            </div>
-                            <div class="activity_main task_main">
-                                <div>
-                                    <input type="checkbox" name="" id="">
-                                </div>
-                                <div>
-                                    <p>Follow up on JP Morgan research request</p>
-                                    <p>JC
-                                        JP Morgan Capital </p>
-                                    <p>Check with analyst team first</p>
-                                    <p>Due: Mar 24, 2023</p>
-                                </div>
-                                <div class="activity_icons">
-                                    <div> Medium</div>
-                                    <div>Overdue</div>
-                                </div>
-                            </div>
-                            <div class="activity_main task_main">
-                                <div>
-                                    <input type="checkbox" name="" id="">
-                                </div>
-                                <div>
-                                    <p>Prepare Q2 performance report for Blackrock</p>
-                                    <p> Blackrock Holdings</p>
-                                    <p>Due: Apr 1, 2025</p>
-                                </div>
-                                <div class="activity_icons">
-                                    <div> High</div>
-                                    <div>Due Today</div>
-                                </div>
-                            </div>
-                            <div class="activity_main task_main">
-                                <div>
-                                    <input type="checkbox" name="" id="">
-                                </div>
-                                <div>
-                                    <p>Call Vanguard about new equity offering</p>
-                                    <p>VG Vanguard Global </p>
-                                    <p>Scheduled for 11:30 AM</p>
-                                    <p>Due: Apr 2, 2025</p>
-                                </div>
-                                <div class="activity_icons">
-                                    <div> Medium</div>
-                                    <div>Due Soon</div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-
-
+            <div class="tasktab_wrp">
+                <div class="unitab-container">
+                    <div class="unitab active" data-tab="all">
+                        All <span class="badge">5</span>
+                    </div>
+                    <div class="unitab" data-tab="pendings"> Pending
+                        <span class="badge">1</span>
+                    </div>
+                    <div class="unitab" data-tab="completed">Completed
+                        <span class="badge">1</span>
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="new" role="tabpanel" aria-labelledby="new-tab">
-                    <p class="mt-3">Content for New prospects.</p>
-                </div>
-                <div class="tab-pane fade" id="contacted" role="tabpanel" aria-labelledby="contacted-tab">
-                    <p class="mt-3">Content for Contacted prospects.</p>
-                </div>
-                <div class="tab-pane fade" id="qualified" role="tabpanel" aria-labelledby="qualified-tab">
-                    <p class="mt-3">Content for Qualified prospects.</p>
-                </div>
-                <div class="tab-pane fade" id="proposal" role="tabpanel" aria-labelledby="proposal-tab">
-                    <p class="mt-3">Content for Proposal prospects.</p>
-                </div>
-                <div class="tab-pane fade" id="negotiation" role="tabpanel" aria-labelledby="negotiation-tab">
-                    <p class="mt-3">Content for Negotiation prospects.</p>
+                <div>
+                    <select name="" style="margin-right: 20px;">
+                        <option selected disabled>All Priorities</option>
+                        <option>Example 1</option>
+                        <option>Example 2</option>
+                        <option>Example 3</option>
+                    </select>
+                    <select name="">
+                        <option selected disabled>All Client</option>
+                        <option>Example 1</option>
+                        <option>Example 2</option>
+                        <option>Example 3</option>
+                    </select>
                 </div>
             </div>
 
-            <hr>
-            <p>Showing 5 of 5 tasks</p>
+
+
+            <div class="unitab-content active" id="all">
+                <!--  -->
+                <section>
+                    <div>
+                        <div class="task_main">
+                            <div>
+                                <input type="checkbox" name="" id="">
+                            </div>
+                            <div>
+                                <p class="lg_task">Update State Street proposal with new terms</p>
+                                <p class="md_task"> <span class="tbadge">SM</span> State Street Management </p>
+                                <p class="md_task">Before team meeting</p>
+                                <span class="task_date">
+                                    <img src="assests/images/icons/calendar2.svg" alt="date">
+                                    <p class="sm_task"> Due: Mar 20, 2023</p>
+                                </span>
+
+                            </div>
+                            <div class="icon_main">
+                                <p class="tasks_icon" style="background-color: #fef3c7;color: #92400E;">Medium</p>
+                                <p class="tasks_icon" style="background-color: #fee2e2;color: #92400E;">Overdue</p>
+                            </div>
+
+                        </div>
+                        <!--  -->
+
+                        <div class="task_main">
+                            <div>
+                                <input type="checkbox" name="" id="">
+                            </div>
+                            <div>
+                                <p class="lg_task">Schedule quarterly review with Fidelity</p>
+                                <p class="md_task"><span class="tbadge">FI</span>Fidelity Investments</p>
+                                <p class="md_task">Include research team</p>
+                                <span class="task_date">
+                                    <img src="assests/images/icons/calendar2.svg" alt="date">
+                                    <p class="sm_task">Due: Mar 22, 2023</p>
+                                </span>
+                            </div>
+                            <div class="icon_main">
+                                <p class="tasks_icon" style="background-color: #d1fae5; color: #065f46;">Low</p>
+                                <p class="tasks_icon" style="background-color: #fee2e2;color: #92400E;">Overdue</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="task_main">
+                            <div>
+                                <input type="checkbox" name="" id="">
+                            </div>
+                            <div>
+                                <p class="lg_task">Follow up on JP Morgan research request</p>
+                                <p class="md_task"><span class="tbadge">JC </span>JP Morgan Capital</p>
+                                <p class="md_task">Check with analyst team first</p>
+                                <span class="task_date">
+                                    <img src="assests/images/icons/calendar2.svg" alt="date">
+                                    <p class="sm_task">Due: Mar 24, 2023</p>
+                                </span>
+                            </div>
+                            <div class="icon_main">
+                                <p class="tasks_icon" style="background-color: #fef3c7;color: #92400E;">Medium</p>
+                                <p class="tasks_icon" style="background-color: #fee2e2;color: #92400E;">Overdue</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="task_main">
+                            <div>
+                                <input type="checkbox" name="" id="">
+                            </div>
+                            <div>
+                                <p class="lg_task">Prepare Q2 performance report for Blackrock</p>
+                                <p class="md_task"><span class="tbadge">BH</span>Blackrock Holdings</p>
+                                <span class="task_date">
+                                    <img src="assests/images/icons/calendar2.svg" alt="date">
+                                    <p class="sm_task">Due: Apr 1, 2025</p>
+                                </span>
+                            </div>
+                            <div class="icon_main">
+                                <p class="tasks_icon" style="background-color: #fecaca; color: #7f1d1d;">High</p>
+                                <p class="tasks_icon" style="background-color: #fef9c3;color: #92400E;">Due Today</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="task_main">
+                            <div>
+                                <input type="checkbox" name="" id="">
+                            </div>
+                            <div>
+                                <p class="lg_task">Call Vanguard about new equity offering</p>
+                                <p class="md_task"><span class="tbadge">VG</span>Vanguard Global</p>
+                                <p class="md_task">Scheduled for 11:30 AM</p>
+                                <span class="task_date">
+                                    <img src="assests/images/icons/calendar2.svg" alt="date">
+                                    <p class="sm_task">Due: Apr 2, 2025</p>
+                                </span>
+                            </div>
+                            <div class="icon_main">
+                                <p class="tasks_icon" style="background-color: #fef3c7;color: #92400E;">Medium</p>
+                                <p class="tasks_icon" style="background-color: #ede9fe;color: #5b21b6;">Due Soon</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <p>Showing 5 of 5 tasks</p>
+                <!--  -->
+            </div>
+            <div class="unitab-content" id="pendings">
+                <h2>pendings</h2>
+                <p>This is the content for calls leads.</p>
+            </div>
+            <div class="unitab-content" id="completed">
+                <h2>completed</h2>
+                <p>This is the content for emails leads.</p>
+            </div>
         </section>
 
         <section>
-            <div class="summary_container">
+            <div class="task_summary">
                 <h3>Task Summary</h3>
-
-
-                <div class="section">
-                    <ul class="list abc">
+                <div class="tlist_btm">
+                    <ul class="tlist_main">
                         <p>Due Today</p>
-                        <li class="list-item">
+                        <li class="tlist_item">
 
-                            <span class="item-name">1</span>
-                            <span class="item-count">logo</span>
+                            <span class="tlist_name">1</span>
+                            <span class="tbadge" style="background-color: #fef3c7;"><img
+                                    src="assests/images/icons/check.svg" alt="check" width="15px"></span>
                         </li>
-
                     </ul>
                 </div>
+                <div class="tlist_btm">
+                    <ul class="tlist_main">
+                        <p>overdue</p>
+                        <li class="tlist_item">
 
+                            <span class="tlist_name">1</span>
+                            <span class="tbadge" style="background-color: #fee2e2;"><img
+                                    src="assests/images/icons/wrong.svg" alt="wrong" width="15px"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tlist_btm">
+                    <ul class="tlist_main">
+                        <p>Completion Rate</p>
+                        <li class="tlist_item">
+
+                            <span class="tlist_name">0%</span>
+                            <span class="tbadge" style="background-color: #dcfce7;"><img
+                                    src="assests/images/icons/check.svg" alt="check" width="15px"></span>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="summary_container">
+
+
+            <div class="task_summary ">
                 <h3>Priority Breakdown</h3>
 
                 <div class="section">
-
-
-                    <ul class="list">
-                        <li class="list-item">
-                            <input type="radio" class="checkbox">
-                            <span class="item-name">High Priority</span>
-                            <span class="item-count">1</span>
+                    <ul class="tlist_main">
+                        <li class="tlist_item">
+                            <img src="assests/images/icons/warning.svg" alt="high"> <span class="tlist_name --">High
+                                Priority</span>
+                            <span class="tbadge">1</span>
                         </li>
-                        <li class="list-item">
-                            <input type="radio" class="checkbox">
-                            <span class="client-code">VG</span>
-                            <span class="item-name">Medium Priority</span>
-                            <span class="item-count">1</span>
+                        <li class="tlist_item">
+                            <img src="assests/images/icons/dots.svg" alt="Medium">
+                            <span class="tlist_name">Medium Priority</span>
+                            <span class="tbadge">3</span>
                         </li>
-                        <li class="list-item">
-                            <input type="radio" class="checkbox">
-                            <span class="item-name">Low Priority</span>
-                            <span class="item-count">1</span>
+                        <li class="tlist_item">
+                            <img src="assests/images/icons/check.svg" alt="low">
+                            <span class="tlist_name">Low Priority</span>
+                            <span class="tbadge">1</span>
                         </li>
 
                     </ul>
@@ -231,7 +240,20 @@
 
     </div>
 
+    <script>
+        const tabs = document.querySelectorAll('.unitab');
+        const contents = document.querySelectorAll('.unitab-content');
 
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                contents.forEach(c => c.classList.remove('active'));
+
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.tab).classList.add('active');
+            });
+        });
+    </script>
 </body>
 
 </html>

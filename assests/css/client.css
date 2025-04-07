@@ -37,19 +37,6 @@
   flex-wrap: wrap;
 }
 
-.clients_badge {
-  width: 40px;
-  height: 40px;
-  background-color: #555;
-  border-radius: 50%;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  flex-wrap: wrap;
-}
-
 .clients_header h3 {
   margin-bottom: unset;
   font-size: 18px;

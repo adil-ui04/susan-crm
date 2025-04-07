@@ -414,9 +414,9 @@ div#DataTables_Table_0_info {
 .unitab-content {
   display: none;
   background-color: white;
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .unitab-content.active {
@@ -460,3 +460,17 @@ div#DataTables_Table_0_info {
     grid-template-columns: 1fr;
   }
 }
+/*  */
+.clients_badge {
+  width: 40px;
+  height: 40px;
+  background-color: #555;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+/*  */

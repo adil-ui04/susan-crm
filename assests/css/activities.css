@@ -11,8 +11,9 @@ select {
   font-weight: 400 !important;
 }
 .activities_grid {
-  display: flex;
-  gap: 7px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
 }
 .activities_tab {
   background-color: #fff;
@@ -23,6 +24,7 @@ select {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   height: fit-content;
 }
+
 .activity_main {
   display: flex;
   gap: 10px;
@@ -117,16 +119,11 @@ h2 {
 
 .item-name {
   flex-grow: 1;
+  margin-left: 10px;
 }
 
 .--list_bg {
   background-color: #e0e0e0;
   color: var(--black) !important;
   border-radius: 50% !important;
-}
-
-.client-code {
-  color: #999;
-  font-size: 0.8em;
-  margin-right: 4px;
 }

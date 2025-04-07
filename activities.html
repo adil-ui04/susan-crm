@@ -12,7 +12,7 @@
     <section class="common_title">
         <div>
             <h3>Activities</h3>
-            <p>Track and manage all client interactions</p>
+            <p class="smtext">Track and manage all client interactions</p>
         </div>
         <div>
             <button class="comm_btn">New Activity</button>
@@ -226,40 +226,35 @@
                 </div>
             </div>
             <div class="summary_container">
-                <h3>Activity Summary</h3>
-                <div class="subtitle">Last 30 days</div>
+                <h3>Top Clients</h3>
+                <p>Most interactions this month</p>
                 <div class="section">
-                    <h2>Top Clients</h2>
-                    <div class="subtitle">Most interactions this month</div>
-
                     <ul class="list_main">
                         <li class="sumlist_item">
-                            <input type="checkbox" class="checkbox">
+                            <div class="clients_badge" style="background-color: black;"></div>
                             <span class="item-name">Blackrock Holdings</span>
-                            <span class="item-count">1</span>
+                            <span class="badge --list_bg">1</span>
                         </li>
                         <li class="sumlist_item">
-                            <input type="checkbox" class="checkbox">
-                            <span class="client-code">VG</span>
+                            <div class="clients_badge" style="background-color: #f5f5f4; color: black;">VG</div>
+
                             <span class="item-name">Vanguard Global</span>
-                            <span class="item-count">1</span>
+                            <span class="badge --list_bg">1</span>
                         </li>
                         <li class="sumlist_item">
-                            <input type="checkbox" class="checkbox">
-                            <span class="item-name">State Street</span>
-                            <span class="item-count">1</span>
+                            <div class="clients_badge">SM</div>
+                            <span class="item-name">State Street <br> Management</span>
+                            <span class="badge --list_bg">1</span>
                         </li>
                         <li class="sumlist_item">
-                            <input type="checkbox" class="checkbox">
-                            <span class="client-code">SM</span>
-                            <span class="item-name">Management</span>
-                            <span class="item-count">1</span>
-                        </li>
-                        <li class="sumlist_item">
-                            <input type="checkbox" class="checkbox">
-                            <span class="client-code">JC</span>
+                            <div class="clients_badge">JC</div>
                             <span class="item-name">JP Morgan Capital</span>
-                            <span class="item-count">1</span>
+                            <span class="badge --list_bg">1</span>
+                        </li>
+                        <li class="sumlist_item">
+                            <div class="clients_badge" style="background-color: black;"></div>
+                            <span class="item-name">Fidelity Investments</span>
+                            <span class="badge --list_bg">1</span>
                         </li>
                     </ul>
                 </div>
@@ -267,7 +262,6 @@
         </section>
 
     </div>
-    <!-- script -->
     <script>
         const tabs = document.querySelectorAll('.unitab');
         const contents = document.querySelectorAll('.unitab-content');
