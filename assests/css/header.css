@@ -400,6 +400,7 @@ i#ham-search {
 	}
 	.sidebar.mobile_nav {
 		display: block;
+		background: var(--white);
 	}
 	.home-section .home-content {
 		z-index: 9999;
@@ -425,6 +426,13 @@ i#ham-search {
 	}
 	.sidebar.close_item .nav-links li a .link_name {
 		opacity: 1;
+	}
+	i#ham-search {
+		display: block;
+	}
+	i#ham-search img {
+		width: 30px;
+		margin-right: 10px;
 	}
 }
 
