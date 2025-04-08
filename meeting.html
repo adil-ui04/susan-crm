@@ -15,7 +15,17 @@
             <p>Schedule and manage client meetings</p>
         </div>
         <div>
-            <button class="comm_btn">+Schedule Meeting</button>
+            <button class="comm_btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-calendar h-4 w-4 mr-2"
+                    data-replit-metadata="client/src/pages/Meetings.tsx:516:18" data-component-name="Calendar">
+                    <path d="M8 2v4"></path>
+                    <path d="M16 2v4"></path>
+                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                    <path d="M3 10h18"></path>
+                </svg>
+                Schedule Meeting</button>
         </div>
     </section>
 
@@ -43,7 +53,13 @@
             </div>
             <!-- nav content -->
             <div class="unitab-content active" id="upcoming">
-                upcoming
+                <div class="meet_sch">
+                    <p>No meetings found</p>
+                    <p class="comm_btn --meet_btn">
+                        <img src="assests/images/icons/calendar.svg" alt="">
+                        Schedule your first Meeting
+                    </p>
+                </div>
             </div>
             <div class="unitab-content" id="today">
                 today
@@ -72,7 +88,7 @@
                         <li class="tlist_item">
 
                             <span class="tlist_name">0</span>
-                            <span class="tbadge" style="background-color: #dbeafe;"><img
+                            <span class="mbadge" style="background-color: #dbeafe;"><img
                                     src="assests/images/icons/calendar.svg" alt="calendar" width="15px"></span>
                         </li>
                     </ul>
@@ -83,8 +99,8 @@
                         <li class="tlist_item">
 
                             <span class="tlist_name">1</span>
-                            <span class="tbadge" style="background-color: #dcfce7;"><img
-                                    src="assests/images/icons/calendar.svg" alt="wrong" width="15px"></span>
+                            <span class="mbadge" style="background-color: #dcfce7;"><img
+                                    src="assests/images/icons/week.svg" alt="wrong" width="15px"></span>
                         </li>
                     </ul>
                 </div>
@@ -98,23 +114,37 @@
                 <div class="section">
                     <ul class="tlist_main">
                         <li class="tlist_item2">
-                            <img src="assests/images/icons/warning.svg" alt="high"> <span class="tlist2">High
-                                Priority</span>
-                            <span class="tbadge">1</span>
+                            <span class="mbadge">FI</span>
+                            <span class="tlist2">Fidelity <br> Investments
+                            </span>
+                            <span class="m_badge">1 meeting</span>
                         </li>
                         <li class="tlist_item2">
-                            <img src="assests/images/icons/dots.svg" alt="Medium">
-                            <span class="tlist2">Medium Priority</span>
-                            <span class="tbadge">3</span>
+                            <span class="mbadge">BH</span>
+                            <span class="tlist2">Blackrock <br> Holdings</span>
+                            <span class="m_badge">0 meetings</span>
                         </li>
                         <li class="tlist_item2">
-                            <img src="assests/images/icons/check.svg" alt="low">
-                            <span class="tlist2">Low Priority</span>
-                            <span class="tbadge">1</span>
+                            <span class="mbadge">VG</span>
+                            <span class="tlist2">Vanguard Global
+                            </span>
+                            <span class="m_badge">0 meetings</span>
                         </li>
-
+                        <li class="tlist_item2">
+                            <span class="mbadge">SM</span>
+                            <span class="tlist2">State Street <br> Management
+                            </span>
+                            <span class="m_badge">0 meetings</span>
+                        </li>
+                        <li class="tlist_item2">
+                            <span class="mbadge">JP</span>
+                            <span class="tlist2"> JP Morgan <br> Capital
+                            </span>
+                            <span class="m_badge">0 meetings</span>
+                        </li>
                     </ul>
                 </div>
+
             </div>
         </section>
 

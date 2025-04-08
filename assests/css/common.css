@@ -456,9 +456,6 @@ div#DataTables_Table_0_info {
 /* tab universal end */
 
 @media only screen and (max-width: 1024px) {
-  .section_wrp {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 @media only screen and (max-width: 475px) {
@@ -468,9 +465,6 @@ div#DataTables_Table_0_info {
   .page_container {
     padding-left: 5px;
     padding-right: 9px;
-  }
-  .section_wrp {
-    grid-template-columns: 1fr;
   }
 }
 /*  */
