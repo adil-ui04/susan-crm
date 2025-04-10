@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="assests/css/common.css">
+    <link rel="icon" type="image/png" href="assests/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assests/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assests/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assests/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assests/images/favicon/site.webmanifest" />
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="assests/css/header.css">
-    <link rel="stylesheet" href="assests/css/style.css">
-    <link rel="stylesheet" href="assests/css/client.css">
-    <link rel="stylesheet" href="assests/css/prospect.css">
-    <link rel="stylesheet" href="assests/css/deals.css">
-    <link rel="stylesheet" href="assests/css/activities.css">
+    <link rel="stylesheet" href="assests/css/common.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css" />
@@ -31,7 +32,6 @@
             <p>MAIN</p>
             <li>
                 <a class="link_name" data-page="dashboard.html">
-                    <!-- <img src="assests/images/icons/fm.svg" alt="fund master " width="18px"> -->
                     <span class="link_name">Dashboard</span>
                 </a>
                 <ul class="sub-menu blank">
@@ -40,7 +40,6 @@
             </li>
             <li>
                 <a class="link_name" data-page="client.html">
-                    <!-- <img src="assests/images/icons/frm.svg" alt="fund rep" width="18px"> -->
                     <span class="link_name">Clients</span>
                 </a>
                 <ul class="sub-menu blank">
@@ -49,7 +48,6 @@
             </li>
             <li>
                 <a class="link_name" id="checklist_btn" data-page="prospect.html">
-                    <!-- <img src="assests/images/icons/cm.svg" alt="company master" width="18px"> -->
                     <span class="link_name">Prospects</span>
                 </a>
                 <ul class="sub-menu blank">
@@ -58,7 +56,6 @@
             </li>
             <li>
                 <a class="link_name" id="checklist_btn" data-page="deals.html">
-                    <!-- <img src="assests/images/icons/crm.svg" alt="company rep" width="18px"> -->
                     <span class="link_name">Deals</span>
                 </a>
                 <ul class="sub-menu blank">
@@ -68,7 +65,6 @@
             <p>ACTIVITIES</p>
             <li>
                 <a class="link_name" id="checklist_btn" data-page="activities.html">
-                    <!-- <img src="assests/images/icons/add-fund.svg" alt="Add Fund" width="18px"> -->
                     <span class="link_name">Activities</span>
                 </a>
                 <ul class="sub-menu blank">
@@ -77,7 +73,6 @@
             </li>
             <li>
                 <a class="link_name" id="checklist_btn" data-page="tasks.html">
-                    <!-- <img src="assests/images/icons/fund-manager.svg" alt="Fund Manager" width="18px"> -->
                     <span class="link_name">Tasks</span>
                 </a>
                 <ul class="sub-menu blank">
@@ -86,7 +81,6 @@
             </li>
             <li>
                 <a class="link_name" id="checklist_btn" data-page="meeting.html">
-                    <!-- <img src="assests/images/icons/meeting.svg" alt="Fund Manager" width="18px"> -->
                     <span class="link_name">Meetings</span>
                 </a>
                 <ul class="sub-menu blank">
@@ -95,7 +89,6 @@
             </li>
             <li>
                 <a class="link_name" id="checklist_btn" data-page="call.html">
-                    <!-- <img src="assests/images/icons/call.svg" alt="Fund Manager" width="18px"> -->
                     <span class="link_name">Calls</span>
                 </a>
                 <ul class="sub-menu blank">
@@ -105,20 +98,18 @@
             <p>RESEARCH</p>
             <li>
                 <a class="link_name" id="checklist_btn" data-page="reports.html">
-                    <!-- <img src="assests/images/icons/fund-manager.svg" alt="Fund Manager" width="18px"> -->
                     <span class="link_name">Reports</span>
                 </a>
                 <ul class="sub-menu blank">
-                    <li><a class="link_name" data-page="fund-manager.html">Reports</a></li>
+                    <li><a class="link_name" data-page="reports.html">Reports</a></li>
                 </ul>
             </li>
             <li>
                 <a class="link_name" id="checklist_btn" data-page="research_notes.html">
-                    <!-- <img src="assests/images/icons/fund-manager.svg" alt="Fund Manager" width="18px"> -->
                     <span class="link_name">Research Notes</span>
                 </a>
                 <ul class="sub-menu blank">
-                    <li><a class="link_name" data-page="fund-manager.html">Research Notes</a></li>
+                    <li><a class="link_name" data-page="research_notes.html">Research Notes</a></li>
                 </ul>
             </li>
         </ul>
@@ -128,11 +119,11 @@
         <div class="home-content">
             <i class='bx bx-menu' id="ham-search"><img src="assests/images/icons/hamburger.svg" alt="hamburger"
                     width="40px"></i>
-            <div class="search-container --nav_search">
+            <!-- <div class="search-container --nav_search">
                 <input type="search" class="search-input --nav_search_inp" id="nav-search"
                     placeholder="Search in SUSAN..." autocomplete="off">
                 <img src="assests/images/icons/searchs.svg" alt="Search Icon" width="20px" class="search-icon">
-            </div>
+            </div> -->
             <div class="super_admin_text">
                 <p>Super Admin</p>
             </div>
@@ -151,39 +142,79 @@
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
     <script src="https://cdn.datatables.net/responsive/3.0.4/js/dataTables.responsive.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
-    <script src="assests/js/main.js"></script>
     <script src="assests/js/header.js"></script>
     <script>
 
         $(document).ready(function () {
-            // Load default page on initial load
             loadPage("dashboard.html");
 
-            // Handle navigation link clicks
             $(".nav-links a").click(function (e) {
                 e.preventDefault();
                 var page = $(this).data("page");
                 if (page) {
-                    loadPage(page); // Load the page content into the container
+                    loadPage(page);
                 }
             });
 
-            function loadPage(page) {
-                $.ajax({
-                    url: page,
-                    method: "GET",
-                    success: function (response) {
-                        $("#content-container").html(response);
-                        initializeDataTables();
-                        initializeDynamicElements();
 
-                    },
-                    error: function (xhr, status, error) {
-                        console.error("Error loading page:", error);
-                        $("#content-container").html("<p>Error loading page. Please try again.</p>");
+            function loadPage(page) {
+                $("#content-container").fadeOut(20, function () {
+                    // Remove any previously added page-specific CSS
+                    $("link[data-page-css]").remove();
+
+                    $.ajax({
+                        url: page,
+                        method: "GET",
+                        success: function (response) {
+                            const tempDiv = $("<div>").html(response);
+
+                            // Extract and load CSS
+                            const cssLinks = tempDiv.find("link[rel='stylesheet']");
+                            let cssLoaded = 0;
+
+                            cssLinks.each(function () {
+                                const href = $(this).attr("href");
+                                $("<link>", {
+                                    rel: "stylesheet",
+                                    href: href,
+                                    "data-page-css": true
+                                })
+                                    .appendTo("head")
+                                    .on("load", function () {
+                                        cssLoaded++;
+                                        if (cssLoaded === cssLinks.length) {
+                                            insertContentAndInit(tempDiv);
+                                        }
+                                    });
+                            });
+
+                            // If no CSS found, just load the page
+                            if (cssLinks.length === 0) {
+                                insertContentAndInit(tempDiv);
+                            }
+                        },
+                        error: function (xhr, status, error) {
+                            console.error("Error loading page:", error);
+                            $("#content-container")
+                                .html("<p>Error loading page. Please try again.</p>")
+                                .fadeIn(30);
+                        }
+                    });
+
+                    function insertContentAndInit(tempDiv) {
+                        // Remove link tags from HTML content
+                        tempDiv.find("link[rel='stylesheet']").remove();
+
+                        $("#content-container").html(tempDiv.html()).fadeIn(30, function () {
+                            setTimeout(() => {
+                                initializeDataTables();
+                                initializeDynamicElements();
+                            });
+                        });
                     }
                 });
             }
+            // 
             function initializeDataTables() {
                 $(".DataTable").DataTable({
                     responsive: true,

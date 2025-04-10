@@ -5,7 +5,7 @@
 }
 
 .call_tab {
-  background-color: #fff;
+  background-color: var(--white);
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 20px;
@@ -22,9 +22,11 @@
   display: flex;
   justify-content: space-between;
   align-items: self-start;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .call_summary {
-  background-color: #fff;
+  background-color: var(--white);
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 20px;
@@ -41,7 +43,6 @@
 .clist_main {
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--gray);
 }
 .clist_main p {
@@ -56,6 +57,7 @@
   display: flex;
   margin-bottom: 20px;
   align-items: center;
+  flex-wrap: wrap;
 }
 .clist2 {
   flex-grow: 1;
@@ -64,6 +66,11 @@
 .clist_item2 img {
   width: 15px;
 }
+
+.ring {
+  width: 20px !important;
+}
+
 .clist_name {
   flex-grow: 1;
   font-size: 24px;
@@ -95,6 +102,7 @@
   display: flex;
   gap: 14px;
   align-items: baseline;
+  flex-wrap: wrap;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -148,7 +156,13 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .call_grid {
+    grid-template-columns: 2fr 1fr;
+  }
 }
 
 @media only screen and (max-width: 475px) {
+  .call_grid {
+    grid-template-columns: 1fr;
+  }
 }

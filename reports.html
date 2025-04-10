@@ -1,212 +1,212 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reports</title>
-    <link rel="stylesheet" href="assests/css/reports.css">
-</head>
-
-<body>
-    <section class="common_title">
-        <div>
-            <h3>Reports & Analytics</h3>
-            <p class="smtext">View and analyze business performance</p>
+<link rel="stylesheet" href="assests/css/reports.css">
+<section class="common_title">
+    <div>
+        <h3>Reports & Analytics</h3>
+        <p class="smtext">View and analyze business performance</p>
+    </div>
+    <div class="flex_container">
+        <button class="comm_btn comm_btn_white">
+            <img src="assests/images/icons/calendar.svg" width="15px" alt="download">
+            Last 30 Days
+        </button>
+        <button class="comm_btn">
+            <img src="assests/images/icons/download.svg" width="15px" alt="download">
+            Export
+        </button>
+    </div>
+</section>
+<!--  -->
+<div class="report_grid">
+    <section class="report_tab">
+        <h4>Available Reports</h4>
+        <p class="report_text">Analytics and insights</p>
+        <div class="report_search">
+            <img src="assests/images/icons/filter.svg" alt="filter_icon" width="12px">
+            <input type="search" id="reportInput" placeholder="Search reports...">
         </div>
-        <div class="flex_container">
-            <button class="comm_btn comm_btn_white">
-                <img src="assests/images/icons/calendar.svg" alt="download">
-                Last 30 Days
-            </button>
-            <button class="comm_btn">
-                <img src="assests/images/icons/download.svg" alt="download">
-                Export
-            </button>
-        </div>
-    </section>
-    <!--  -->
-    <div class="tasks_grid">
-        <section class="tasks_tab">
-            <h4>Available Reports</h4>
-            <p class="para_text">Analytics and insights</p>
-            <div class="search_report">
-                <img src="assests/images/icons/filter.svg" alt="filter_icon">
-                <input type="search" placeholder="Search reports...">
-            </div>
+        <p id="noResults" class="nosearch">No data
+            found.</p>
 
-
-            <div class="tasktab_wrp">
-                <div class="unitab-container">
-                    <div class="unitab active" data-tab="all">
-                        All
-                    </div>
-                    <div class="unitab" data-tab="pendings"> Sales
-                    </div>
-                    <div class="unitab" data-tab="completed">Deals
-                    </div>
-                    <div class="unitab" data-tab="completed">Clients
-                    </div>
+        <div class="report_wrp">
+            <div class="unitab-container">
+                <div class="unitab active" data-tab="all">
+                    All
+                </div>
+                <div class="unitab" data-tab="pendings"> Sales
+                </div>
+                <div class="unitab" data-tab="completed">Deals
+                </div>
+                <div class="unitab" data-tab="completed">Clients
                 </div>
             </div>
+        </div>
 
-
-
-            <div class="unitab-content active" id="all">
-                <!--  -->
-                <section>
-                    <div>
-                        <div class="task_main">
-                            <div>
-                                <div class="task_main_content">
-                                    <img src="assests/images/icons/user_icon.svg" alt="user_icon">
-                                </div>
-                                <p class="lg_task">Sales by Client</p>
-                                <p class="md_task">Revenue breakdown by client accounts</p>
-                                <span class="task_date">
-                                    <img src="assests/images/icons/calendar2.svg" alt="date">
-                                    <p class="sm_task"> Today</p>
-                                </span>
-
+        <div class="unitab-content active" id="all">
+            <!--  -->
+            <section>
+                <div id="report-note">
+                    <div class="report_main">
+                        <div>
+                            <div class="report_main_content">
+                                <img src="assests/images/icons/user_icon.svg" alt="user_icon">
                             </div>
-                            <div class="icon_main">
-                                <img src="assests/images/icons/download.svg" alt="date" class="tasks_icon">
-                            </div>
+                            <p class="lg_report">Sales by Client</p>
+                            <p class="md_report">Revenue breakdown by client accounts</p>
+                            <span class="report_date">
+                                <img src="assests/images/icons/calendar2.svg" alt="date" width="15px">
+                                <p class="sm_report"> Today</p>
+                            </span>
 
                         </div>
-                        <!--  -->
-
-                        <div class="task_main">
-                            <div>
-                                <div class="task_main_content">
-                                    <img src="assests/images/icons/pipeline_analysis.svg" alt="pipeline_analysis">
-                                </div>
-                                <p class="lg_task">Pipeline Analysis</p>
-                                <p class="md_task">Deal distribution across pipeline stages</p>
-                                <span class="task_date">
-                                    <img src="assests/images/icons/calendar2.svg" alt="date">
-                                    <p class="sm_task"> Yesterday</p>
-                                </span>
-
-                            </div>
-                            <div class="icon_main">
-                                <img src="assests/images/icons/download.svg" alt="date" class="tasks_icon">
-                            </div>
-
+                        <div class="icon_report">
+                            <img src="assests/images/icons/download.svg" alt="date" width="15px" class="r_icon">
                         </div>
-                        <!--  -->
-                        <div class="task_main">
-                            <div>
-                                <div class="task_main_content">
-                                    <img src="assests/images/icons/monthly_analysis.svg" alt="monthly_analysis">
-                                </div>
-                                <p class="lg_task">Monthly Revenue</p>
-                                <p class="md_task">Revenue performance vs targets</p>
-                                <span class="task_date">
-                                    <img src="assests/images/icons/calendar2.svg" alt="date">
-                                    <p class="sm_task"> Aug 30, 2023</p>
-                                </span>
 
-                            </div>
-                            <div class="icon_main">
-                                <img src="assests/images/icons/download.svg" alt="date" class="tasks_icon">
-                            </div>
-
-                        </div>
-                        <!--  -->
-                        <div class="task_main">
-                            <div>
-                                <div class="task_main_content">
-                                    <img src="assests/images/icons/client_retention.svg" alt="client_retention">
-                                </div>
-                                <p class="lg_task">Client Retention</p>
-                                <p class="md_task">Client retention and churn analysis</p>
-                                <span class="task_date">
-                                    <img src="assests/images/icons/calendar2.svg" alt="date">
-                                    <p class="sm_task"> Aug 20, 2023</p>
-                                </span>
-
-                            </div>
-                            <div class="icon_main">
-                                <img src="assests/images/icons/download.svg" alt="date" class="tasks_icon">
-                            </div>
-
-                        </div>
-                        <!--  -->
-                        <div class="task_main">
-                            <div>
-                                <div class="task_main_content">
-                                    <img src="assests/images/icons/revenue.svg" alt="revenue">
-                                </div>
-                                <p class="lg_task">Revenue Forecast</p>
-                                <p class="md_task">Projected revenue for next 90 days</p>
-                                <span class="task_date">
-                                    <img src="assests/images/icons/calendar2.svg" alt="date">
-                                    <p class="sm_task"> Aug 15, 2023</p>
-                                </span>
-
-                            </div>
-                            <div class="icon_main">
-                                <img src="assests/images/icons/download.svg" alt="date" class="tasks_icon">
-                            </div>
-
-                        </div>
-                        <div class="task_main">
-                            <div>
-                                <div class="task_main_content">
-                                    <img src="assests/images/icons/blackdoc.svg" alt="blackdoc">
-                                </div>
-                                <p class="lg_task">Meeting Productivity</p>
-                                <p class="md_task">Analysis of meeting outcomes and conversion</p>
-                                <span class="task_date">
-                                    <img src="assests/images/icons/calendar2.svg" alt="date">
-                                    <p class="sm_task"> Aug 15, 2023</p>
-                                </span>
-
-                            </div>
-                            <div class="icon_main">
-                                <img src="assests/images/icons/download.svg" alt="date" class="tasks_icon">
-                            </div>
-
-                        </div>
                     </div>
-                </section>
-                <!--  -->
-            </div>
-            <div class="unitab-content" id="pendings">
-                <h2>pendings</h2>
-                <p>This is the content for calls leads.</p>
-            </div>
-            <div class="unitab-content" id="completed">
-                <h2>completed</h2>
-                <p>This is the content for emails leads.</p>
-            </div>
-        </section>
+                    <!--  -->
 
-        <section class="summary_main">
-            <div class="document_content">
-                <img src="assests/images/icons/doc.svg" alt="doc">
-                <h3>Select a report to view</h3>
-                <p>Choose a report from the list to view detailed analytics and insights</p>
-            </div>
-        </section>
+                    <div class="report_main">
+                        <div>
+                            <div class="report_main_content">
+                                <img src="assests/images/icons/pipeline_analysis.svg" alt="pipeline_analysis">
+                            </div>
+                            <p class="lg_report">Pipeline Analysis</p>
+                            <p class="md_report">Deal distribution across pipeline stages</p>
+                            <span class="report_date">
+                                <img src="assests/images/icons/calendar2.svg" alt="date" width="15px">
+                                <p class="sm_report"> Yesterday</p>
+                            </span>
 
-    </div>
+                        </div>
+                        <div class="icon_report">
+                            <img src="assests/images/icons/download.svg" alt="date" width="15px" class="r_icon">
+                        </div>
 
-    <script>
-        const tabs = document.querySelectorAll('.unitab');
-        const contents = document.querySelectorAll('.unitab-content');
+                    </div>
+                    <!--  -->
+                    <div class="report_main">
+                        <div>
+                            <div class="report_main_content">
+                                <img src="assests/images/icons/monthly_analysis.svg" alt="monthly_analysis">
+                            </div>
+                            <p class="lg_report">Monthly Revenue</p>
+                            <p class="md_report">Revenue performance vs targets</p>
+                            <span class="report_date">
+                                <img src="assests/images/icons/calendar2.svg" alt="date" width="15px">
+                                <p class="sm_report"> Aug 30, 2023</p>
+                            </span>
 
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                tabs.forEach(t => t.classList.remove('active'));
-                contents.forEach(c => c.classList.remove('active'));
+                        </div>
+                        <div class="icon_report">
+                            <img src="assests/images/icons/download.svg" alt="date" width="15px" class="r_icon">
+                        </div>
 
-                tab.classList.add('active');
-                document.getElementById(tab.dataset.tab).classList.add('active');
+                    </div>
+                    <!--  -->
+                    <div class="report_main">
+                        <div>
+                            <div class="report_main_content">
+                                <img src="assests/images/icons/client_retention.svg" alt="client_retention">
+                            </div>
+                            <p class="lg_report">Client Retention</p>
+                            <p class="md_report">Client retention and churn analysis</p>
+                            <span class="report_date">
+                                <img src="assests/images/icons/calendar2.svg" alt="date" width="15px">
+                                <p class="sm_report"> Aug 20, 2023</p>
+                            </span>
+
+                        </div>
+                        <div class="icon_report">
+                            <img src="assests/images/icons/download.svg" alt="date" width="15px" class="r_icon">
+                        </div>
+
+                    </div>
+                    <!--  -->
+                    <div class="report_main">
+                        <div>
+                            <div class="report_main_content">
+                                <img src="assests/images/icons/revenue.svg" alt="revenue">
+                            </div>
+                            <p class="lg_report">Revenue Forecast</p>
+                            <p class="md_report">Projected revenue for next 90 days</p>
+                            <span class="report_date">
+                                <img src="assests/images/icons/calendar2.svg" alt="date" width="15px">
+                                <p class="sm_report"> Aug 15, 2023</p>
+                            </span>
+
+                        </div>
+                        <div class="icon_report">
+                            <img src="assests/images/icons/download.svg" alt="date" width="15px" class="r_icon">
+                        </div>
+
+                    </div>
+                    <div class="report_main">
+                        <div>
+                            <div class="report_main_content">
+                                <img src="assests/images/icons/blackdoc.svg" alt="blackdoc">
+                            </div>
+                            <p class="lg_report">Meeting Productivity</p>
+                            <p class="md_report">Analysis of meeting outcomes and conversion</p>
+                            <span class="report_date">
+                                <img src="assests/images/icons/calendar2.svg" alt="date" width="15px">
+                                <p class="sm_report"> Aug 15, 2023</p>
+                            </span>
+
+                        </div>
+                        <div class="icon_report">
+                            <img src="assests/images/icons/download.svg" alt="date" width="15px" class="r_icon">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!--  -->
+        </div>
+        <div class="unitab-content" id="pendings">
+            <h2>pendings</h2>
+            <p>This is the content for calls leads.</p>
+        </div>
+        <div class="unitab-content" id="completed">
+            <h2>completed</h2>
+            <p>This is the content for emails leads.</p>
+        </div>
+    </section>
+
+    <section class="summary_report">
+        <div class="document_content">
+            <img src="assests/images/icons/doc.svg" alt="doc">
+            <h3>Select a report to view</h3>
+            <p>Choose a report from the list to view detailed analytics and insights</p>
+        </div>
+    </section>
+
+</div>
+
+<script src="assests/js/js-main.js"></script>
+<script>
+
+    $(document).ready(function () {
+        $('#reportInput').on('input', function () {
+            var value = $(this).val().toLowerCase();
+            var hasVisible = false;
+
+            $('#report-note .report_main').each(function () {
+                if ($(this).text().toLowerCase().indexOf(value) > -1) {
+                    $(this).show();
+                    hasVisible = true;
+                } else {
+                    $(this).hide();
+                }
             });
+
+            if (!hasVisible) {
+                $('#noResults').show();
+            } else {
+                $('#noResults').hide();
+            }
         });
-    </script>
+    });
+</script>
 </body>
 
 </html>

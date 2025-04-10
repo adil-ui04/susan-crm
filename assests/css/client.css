@@ -16,6 +16,16 @@
   width: 100%;
   max-width: 500px;
   margin-bottom: 20px;
+  background-color: var(--white);
+}
+.nosearch {
+  color: red;
+  margin-top: 5px;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 100%;
 }
 .clients_main {
   display: grid;
@@ -27,13 +37,14 @@
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  background-color: var(--white);
 }
 
 .clients_header {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  gap: 20px;
+  gap: 15px;
   flex-wrap: wrap;
 }
 
@@ -80,9 +91,9 @@
 }
 
 .--client_btn {
-  background-color: white;
-  color: black;
-  border: 1px solid var(--lightgreen);
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--gray);
   margin-left: auto;
 }
 
@@ -95,7 +106,7 @@
   }
   .clients_header {
     justify-content: start;
-    gap: 5px;
+    gap: 10px;
   }
   .clients_header p {
     margin-bottom: 3px;
@@ -110,7 +121,7 @@
   }
   .clients_header {
     justify-content: start;
-    gap: 5px;
+    gap: 10px;
   }
   .clients_header p {
     margin-bottom: 3px;

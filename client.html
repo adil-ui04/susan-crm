@@ -1,221 +1,239 @@
-<!DOCTYPE html>
-<html lang="en">
+<link rel="stylesheet" href="assests/css/client.css">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<section class="common_title">
+    <div>
+        <h3>Clients</h3>
+        <p class="smtext">View and manage your institutional clients</p>
+    </div>
+    <button class="comm_btn">
+        <img src="assests/images/icons/plus.svg" alt="add">
+        Add Client
+    </button>
+</section>
+<!-- title end -->
 
-</head>
+<!-- search start -->
+<section class="clnt_search">
+    <div class="search-container">
+        <input type="search" id="clientInput" class="search-input --client_search " placeholder="Search clients..."
+            autocomplete="off">
+        <img src="assests/images/icons/searchs.svg" alt="Search Icon" width="20px" class="search-icon --srch_icon">
+        <p id="noResults" class="nosearch">No data
+            found.</p>
+    </div>
+    <div>
+        <p> Showing 5 of 5 clients</p>
+    </div>
+</section>
 
-<body>
-    <section class="common_title">
-        <div>
-            <h3>Clients</h3>
-            <p class="smtext">View and manage your institutional clients</p>
-        </div>
-        <button class="comm_btn">
-            <img src="assests/images/icons/plus.svg" alt="add">
-            Add Client
-        </button>
-    </section>
 
-    <section class="clnt_search">
-        <div class="search-container">
-            <input type="search" class="search-input --client_search " placeholder="Search clients..."
-                autocomplete="off">
-            <img src="assests/images/icons/searchs.svg" alt="Search Icon" width="20px" class="search-icon --srch_icon">
-        </div>
-        <div>
-            <p> Showing 5 of 5 clients</p>
-        </div>
-    </section>
+<!-- search end -->
 
-    <section class="clients_main">
+<!-- client card start -->
+<section class="clients_main" id="client-note">
 
-        <div class="clients_card">
-            <div class="clients_header">
-                <div class="clients_badge">BH</div>
-                <div>
-                    <h3>Blackrock Holdings</h3>
-                    <p>Asset Management</p>
-                </div>
-                <button class="comm_btn --client_btn">View Details</button>
+    <div class="clients_card">
+        <div class="clients_header">
+            <div class="clients_badge">BH</div>
+            <div>
+                <h3>Blackrock Holdings</h3>
+                <p>Asset Management</p>
             </div>
-            <!--  -->
-            <div class="clients_details">
-                <div><img src="assests/images/icons/company.svg" alt=" company"><span>Corporate</span> </div>
-                <div><img src="assests/images/icons/location.svg" alt="location"> <span>New York, NY</span></div>
-                <div><img src="assests/images/icons/email.svg" alt="email"><span>contact@example.com</span></div>
-                <div><img src="assests/images/icons/call.svg" alt="call"><span>+1 (555) 123-4567</span> </div>
+            <button class="comm_btn --client_btn">View Details</button>
+        </div>
+        <!--  -->
+        <div class="clients_details">
+            <div><img src="assests/images/icons/company.svg" alt=" company"><span>Corporate</span> </div>
+            <div><img src="assests/images/icons/location.svg" alt="location"> <span>New York, NY</span></div>
+            <div><img src="assests/images/icons/email.svg" alt="email"><span>contact@example.com</span></div>
+            <div><img src="assests/images/icons/call.svg" alt="call"><span>+1 (555) 123-4567</span> </div>
+        </div>
+        <hr>
+        <div class="clients_stats">
+            <div>
+                <span>AUM</span>
+                <p> 8500000000</p>
             </div>
-            <hr>
-            <div class="clients_stats">
-                <div>
-                    <span>AUM</span>
-                    <p> 8500000000</p>
-                </div>
-                <div>
-                    <span>YTD Revenue</span>
-                    <p>$1.2M</p>
-                </div>
-                <div>
-                    <span>Open Deals</span>
-                    <p>3</p>
-                </div>
-
+            <div>
+                <span>YTD Revenue</span>
+                <p>$1.2M</p>
+            </div>
+            <div>
+                <span>Open Deals</span>
+                <p>3</p>
             </div>
 
         </div>
-
-        <div class="clients_card">
-            <div class="clients_header">
-                <div class="clients_badge">VG</div>
-                <div>
-                    <h3> Vanguard Global</h3>
-                    <p>Investment Management</p>
-                </div>
-                <button class="comm_btn --client_btn">View Details</button>
-            </div>
-            <!--  -->
-            <div class="clients_details">
-                <div><img src="assests/images/icons/company.svg" alt=" company"><span>Corporate</span> </div>
-                <div><img src="assests/images/icons/location.svg" alt="location"> <span>New York, NY</span></div>
-                <div><img src="assests/images/icons/email.svg" alt="email"><span>contact@example.com</span></div>
-                <div><img src="assests/images/icons/call.svg" alt="call"><span>+1 (555) 123-4567</span> </div>
-            </div>
-            <hr>
-            <div class="clients_stats">
-                <div>
-                    <span>AUM</span>
-                    <p> 8500000000</p>
-                </div>
-                <div>
-                    <span>YTD Revenue</span>
-                    <p>$1.2M</p>
-                </div>
-                <div>
-                    <span>Open Deals</span>
-                    <p>3</p>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="clients_card">
-            <div class="clients_header">
-                <div class="clients_badge">SSM</div>
-                <div>
-                    <h3>State Street
-                        <br> Management
-                    </h3>
-                    <p>Pension Fund</p>
-                </div>
-                <button class="comm_btn --client_btn">View Details</button>
-            </div>
-            <!--  -->
-            <div class="clients_details">
-                <div><img src="assests/images/icons/company.svg" alt=" company"><span>Corporate</span> </div>
-                <div><img src="assests/images/icons/location.svg" alt="location"> <span>New York, NY</span></div>
-                <div><img src="assests/images/icons/email.svg" alt="email"><span>contact@example.com</span></div>
-                <div><img src="assests/images/icons/call.svg" alt="call"><span>+1 (555) 123-4567</span> </div>
-            </div>
-            <hr>
-            <div class="clients_stats">
-                <div>
-                    <span>AUM</span>
-                    <p> 8500000000</p>
-                </div>
-                <div>
-                    <span>YTD Revenue</span>
-                    <p>$1.2M</p>
-                </div>
-                <div>
-                    <span>Open Deals</span>
-                    <p>3</p>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="clients_card">
-            <div class="clients_header">
-                <div class="clients_badge">JMC</div>
-                <div>
-                    <h3>JP Morgan Capital</h3>
-                    <p>Investment Bank</p>
-                </div>
-                <button class="comm_btn --client_btn">View Details</button>
-            </div>
-            <!--  -->
-            <div class="clients_details">
-                <div><img src="assests/images/icons/company.svg" alt=" company"><span>Corporate</span> </div>
-                <div><img src="assests/images/icons/location.svg" alt="location"> <span>New York, NY</span></div>
-                <div><img src="assests/images/icons/email.svg" alt="email"><span>contact@example.com</span></div>
-                <div><img src="assests/images/icons/call.svg" alt="call"><span>+1 (555) 123-4567</span> </div>
-            </div>
-            <hr>
-            <div class="clients_stats">
-                <div>
-                    <span>AUM</span>
-                    <p> 8500000000</p>
-                </div>
-                <div>
-                    <span>YTD Revenue</span>
-                    <p>$1.2M</p>
-                </div>
-                <div>
-                    <span>Open Deals</span>
-                    <p>3</p>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="clients_card">
-            <div class="clients_header">
-                <div class="clients_badge">FI</div>
-                <div>
-                    <h3>Fidelity Investments</h3>
-                    <p>Asset Management</p>
-                </div>
-                <button class="comm_btn --client_btn">View Details</button>
-            </div>
-            <!--  -->
-            <div class="clients_details">
-                <div><img src="assests/images/icons/company.svg" alt=" company"><span>Corporate</span> </div>
-                <div><img src="assests/images/icons/location.svg" alt="location"> <span>New York, NY</span></div>
-                <div><img src="assests/images/icons/email.svg" alt="email"><span>contact@example.com</span></div>
-                <div><img src="assests/images/icons/call.svg" alt="call"><span>+1 (555) 123-4567</span> </div>
-            </div>
-            <hr>
-            <div class="clients_stats">
-                <div>
-                    <span>AUM</span>
-                    <p> 8500000000</p>
-                </div>
-                <div>
-                    <span>YTD Revenue</span>
-                    <p>$1.2M</p>
-                </div>
-                <div>
-                    <span>Open Deals</span>
-                    <p>3</p>
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-    </section>
-
 
     </div>
+    <!--  -->
+    <div class="clients_card">
+        <div class="clients_header">
+            <div class="clients_badge">VG</div>
+            <div>
+                <h3> Vanguard Global</h3>
+                <p>Investment Management</p>
+            </div>
+            <button class="comm_btn --client_btn">View Details</button>
+        </div>
+        <!--  -->
+        <div class="clients_details">
+            <div><img src="assests/images/icons/company.svg" alt=" company"><span>Corporate</span> </div>
+            <div><img src="assests/images/icons/location.svg" alt="location"> <span>New York, NY</span></div>
+            <div><img src="assests/images/icons/email.svg" alt="email"><span>contact@example.com</span></div>
+            <div><img src="assests/images/icons/call.svg" alt="call"><span>+1 (555) 123-4567</span> </div>
+        </div>
+        <hr>
+        <div class="clients_stats">
+            <div>
+                <span>AUM</span>
+                <p> 8500000000</p>
+            </div>
+            <div>
+                <span>YTD Revenue</span>
+                <p>$1.2M</p>
+            </div>
+            <div>
+                <span>Open Deals</span>
+                <p>3</p>
+            </div>
+
+        </div>
+
+    </div>
+    <!--  -->
+    <div class="clients_card">
+        <div class="clients_header">
+            <div class="clients_badge">SSM</div>
+            <div>
+                <h3>State Street
+                    <br> Management
+                </h3>
+                <p>Pension Fund</p>
+            </div>
+            <button class="comm_btn --client_btn">View Details</button>
+        </div>
+        <!--  -->
+        <div class="clients_details">
+            <div><img src="assests/images/icons/company.svg" alt=" company"><span>Corporate</span> </div>
+            <div><img src="assests/images/icons/location.svg" alt="location"> <span>New York, NY</span></div>
+            <div><img src="assests/images/icons/email.svg" alt="email"><span>contact@example.com</span></div>
+            <div><img src="assests/images/icons/call.svg" alt="call"><span>+1 (555) 123-4567</span> </div>
+        </div>
+        <hr>
+        <div class="clients_stats">
+            <div>
+                <span>AUM</span>
+                <p> 8500000000</p>
+            </div>
+            <div>
+                <span>YTD Revenue</span>
+                <p>$1.2M</p>
+            </div>
+            <div>
+                <span>Open Deals</span>
+                <p>3</p>
+            </div>
+
+        </div>
+
+    </div>
+    <!--  -->
+    <div class="clients_card">
+        <div class="clients_header">
+            <div class="clients_badge">JMC</div>
+            <div>
+                <h3>JP Morgan Capital</h3>
+                <p>Investment Bank</p>
+            </div>
+            <button class="comm_btn --client_btn">View Details</button>
+        </div>
+        <!--  -->
+        <div class="clients_details">
+            <div><img src="assests/images/icons/company.svg" alt=" company"><span>Corporate</span> </div>
+            <div><img src="assests/images/icons/location.svg" alt="location"> <span>New York, NY</span></div>
+            <div><img src="assests/images/icons/email.svg" alt="email"><span>contact@example.com</span></div>
+            <div><img src="assests/images/icons/call.svg" alt="call"><span>+1 (555) 123-4567</span> </div>
+        </div>
+        <hr>
+        <div class="clients_stats">
+            <div>
+                <span>AUM</span>
+                <p> 8500000000</p>
+            </div>
+            <div>
+                <span>YTD Revenue</span>
+                <p>$1.2M</p>
+            </div>
+            <div>
+                <span>Open Deals</span>
+                <p>3</p>
+            </div>
+
+        </div>
+
+    </div>
+    <!--  -->
+    <div class="clients_card">
+        <div class="clients_header">
+            <div class="clients_badge">FI</div>
+            <div>
+                <h3>Fidelity Investments</h3>
+                <p>Asset Management</p>
+            </div>
+            <button class="comm_btn --client_btn">View Details</button>
+        </div>
+        <!--  -->
+        <div class="clients_details">
+            <div><img src="assests/images/icons/company.svg" alt=" company"><span>Corporate</span> </div>
+            <div><img src="assests/images/icons/location.svg" alt="location"> <span>New York, NY</span></div>
+            <div><img src="assests/images/icons/email.svg" alt="email"><span>contact@example.com</span></div>
+            <div><img src="assests/images/icons/call.svg" alt="call"><span>+1 (555) 123-4567</span> </div>
+        </div>
+        <hr>
+        <div class="clients_stats">
+            <div>
+                <span>AUM</span>
+                <p> 8500000000</p>
+            </div>
+            <div>
+                <span>YTD Revenue</span>
+                <p>$1.2M</p>
+            </div>
+            <div>
+                <span>Open Deals</span>
+                <p>3</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- client card end -->
+
+<script>
+
+    $(document).ready(function () {
+        $('#clientInput').on('input', function () {
+            var value = $(this).val().toLowerCase();
+            var hasVisible = false;
+
+            $('#client-note .clients_card').each(function () {
+                if ($(this).text().toLowerCase().indexOf(value) > -1) {
+                    $(this).show();
+                    hasVisible = true;
+                } else {
+                    $(this).hide();
+                }
+            });
+
+            if (!hasVisible) {
+                $('#noResults').show();
+            } else {
+                $('#noResults').hide();
+            }
+        });
+    });
+</script>
 </body>
 
 </html>

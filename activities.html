@@ -1,281 +1,262 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-</head>
-
-<body>
-    <section class="common_title">
-        <div>
-            <h3>Activities</h3>
-            <p class="smtext">Track and manage all client interactions</p>
+<link rel="stylesheet" href="assests/css/activities.css">
+<section class="common_title">
+    <div>
+        <h3>Activities</h3>
+        <p class="smtext">Track and manage all client interactions</p>
+    </div>
+    <div>
+        <button class="comm_btn">New Activity</button>
+    </div>
+</section>
+<!--  -->
+<div class="activities_grid">
+    <section class="activities_tab">
+        <h4>Recent Activities</h4>
+        <p class="para_head">All client interactions from calls to emails</p>
+        <div class="activities_wrp">
+            <div class="unitab-container">
+                <div class="unitab active" data-tab="all"> <img src="assests/images/icons/calendar.svg" alt="cal">
+                    All Activities <span class="badge">5</span></div>
+                <div class="unitab" data-tab="calls"><img src="assests/images/icons/call2.svg" alt="cal"> Calls
+                    <span class="badge">1</span>
+                </div>
+                <div class="unitab" data-tab="emails"> <img src="assests/images/icons/send.svg" alt="cal">Emails
+                    <span class="badge">1</span>
+                </div>
+                <div class="unitab" data-tab="meetings"> <img src="assests/images/icons/user.svg" alt="cal">Meetings
+                    <span class="badge">1</span>
+                </div>
+                <div class="unitab" data-tab="reports"> <img src="assests/images/icons/research.svg" alt="cal">Reports
+                    <span class="badge">1</span>
+                </div>
+                <div class="unitab" data-tab="notes"> <img src="assests/images/icons/note.svg" alt="cal">Notes
+                    <span class="badge">0</span>
+                </div>
+            </div>
+            <div class="select_box_main">
+                <select name="" class="select_box">
+                    <option selected disabled>All Client</option>
+                    <option>Example 1</option>
+                    <option>Example 2</option>
+                    <option>Example 3</option>
+                </select>
+            </div>
         </div>
-        <div>
-            <button class="comm_btn">New Activity</button>
+
+        <div class="unitab-content active" id="all">
+            <section class="activity_grid">
+                <div class="mb_bottom">
+                    <div class="activity_main">
+                        <img src="assests/images/icons/call2.svg" alt="call">
+                        <div>
+                            <p class="text_ml">Call with Blackrock Holdings<br>
+                                <span class="act_with"> with</span> <strong class="act_strng"> Blackrock
+                                    Holdings</strong>
+                            </p>
+                            <p class="text-act --txt">Discussed Q3 investment strategy and research needs</p>
+                            <p class="text-act">today at 9:28 AM</p>
+                        </div>
+                        <div class="activity_icons">
+                            <img src="assests/images/icons/call2.svg" alt="call">
+                            <span>Call</span>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="mb_bottom">
+                    <div class="activity_main">
+                        <img src="assests/images/icons/research.svg" alt="report">
+                        <div>
+                            <p class="text_ml">Research Report Sent to Vanguard Global<br>
+                                <span class="act_with"> with</span> <strong class="act_strng"> Vanguard
+                                    Global</strong>
+                            </p>
+                            <p class="text-act --txt">Q3 Tech Sector Analysis delivered via email</p>
+                            <p class="text-act">yesterday at 11:28 AM</p>
+                        </div>
+                        <div class="activity_icons">
+                            <img src="assests/images/icons/research.svg" alt="report">
+                            <span>Report</span>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="mb_bottom">
+                    <div class="activity_main">
+                        <img src="assests/images/icons/user_icon.svg" alt="Meeting">
+                        <div>
+                            <p class="text_ml">Meeting with Fidelity Investments<br>
+                                <span class="act_with"> with</span> <strong class="act_strng"> Fidelity
+                                    Investments</strong>
+                            </p>
+                            <p class="text-act --txt">Quarterly portfolio review and market update</p>
+                            <p class="text-act">03/15/2023</p>
+                        </div>
+                        <div class="activity_icons">
+                            <img src="assests/images/icons/user.svg" alt="Meeting">
+                            <span>Meeting</span>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="mb_bottom">
+                    <div class="activity_main">
+                        <img src="assests/images/icons/call2.svg" alt="call">
+                        <div>
+                            <p class="text_ml">Call with Blackrock Holdings<br>
+                                <span class="act_with"> with</span> <strong class="act_strng"> Blackrock
+                                    Holdings</strong>
+                            </p>
+                            <p class="text-act --txt">Discussed Q3 investment strategy and research needs</p>
+                            <p class="text-act">today at 9:28 AM</p>
+                        </div>
+                        <div class="activity_icons">
+                            <img src="assests/images/icons/call2.svg" alt="call">
+                            <span>Call</span>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="mb_bottom">
+                    <div class="activity_main">
+                        <img src="assests/images/icons/send.svg" alt="email">
+                        <div>
+                            <p class="text_ml">Follow-up Email to State Street Management<br>
+                                <span class="act_with"> with</span> <strong class="act_strng">State Street
+                                    Management</strong>
+                            </p>
+                            <p class="text-act --txt">Sent information about new ESG investment opportunities</p>
+                            <p class="text-act">03/14/2023</p>
+                        </div>
+                        <div class="activity_icons">
+                            <img src="assests/images/icons/send.svg" alt="email">
+                            <span>Email</span>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="mb_bottom">
+                    <div class="activity_main">
+                        <img src="assests/images/icons/calendar.svg" alt="task">
+                        <div>
+                            <p class="text_ml">Deal Update for JP Morgan Capital<br>
+                                <span class="act_with"> with</span> <strong class="act_strng">JP Morgan
+                                    Capital</strong>
+                            </p>
+                            <p class="text-act --txt">Updated pipeline status to "Negotiation" stage</p>
+                            <p class="text-act">03/12/2023</p>
+                        </div>
+                        <div class="activity_icons">
+                            <img src="assests/images/icons/calendar.svg" alt="task">
+                            <span>Task</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <div class="act_page">
+                <p>Showing 5 of 5 activities</p>
+                <button class="comm_btn --btnw">View All</button>
+            </div>
+        </div>
+
+        <!--  -->
+        <div class="unitab-content" id="calls">
+            <h2>calls</h2>
+            <p>This is the content for calls leads.</p>
+        </div>
+        <div class="unitab-content" id="emails">
+            <h2>emails</h2>
+            <p>This is the content for emails leads.</p>
+        </div>
+        <div class="unitab-content" id="meetings">
+            <h2>meetings</h2>
+            <p>This is the content for meetingss.</p>
+        </div>
+        <div class="unitab-content" id="reports">
+            <h2>reports</h2>
+            <p>This is the content for reports stage.</p>
+        </div>
+        <div class="unitab-content" id="notes">
+            <h2>notes</h2>
+            <p>This is the content for reports stage.</p>
+        </div>
+
+    </section>
+
+    <section class="summary_container_main">
+        <div class="summary_container">
+            <h3>Activity Summary</h3>
+            <p>Last 30 days</p>
+
+            <div class="section">
+                <ul class="list_main">
+                    <li class="sumlist_item">
+                        <img src="assests/images/icons/call2.svg" alt="call">
+                        <span class="item-name">Calls</span>
+                        <span class="badge --list_bg">1</span>
+                    </li>
+                    <li class="sumlist_item">
+                        <img src="assests/images/icons/send.svg" alt="report">
+                        <span class="item-name">Emails</span>
+                        <span class="badge --list_bg">1</span>
+                    </li>
+                    <li class="sumlist_item">
+                        <img src="assests/images/icons/call2.svg" alt="Meeting">
+                        <span class="item-name">Meetings</span>
+                        <span class="badge --list_bg">1</span>
+                    </li>
+                    <li class="sumlist_item">
+                        <img src="assests/images/icons/research.svg" alt="report">
+                        <span class="item-name">Reports</span>
+                        <span class="badge --list_bg">1</span>
+                    </li>
+                    <li class="sumlist_item">
+                        <img src="assests/images/icons/note.svg" alt="note">
+                        <span class="item-name">Notes</span>
+                        <span class="badge --list_bg">0</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="summary_container">
+            <h3>Top Clients</h3>
+            <p>Most interactions this month</p>
+            <div class="section">
+                <ul class="list_main">
+                    <li class="sumlist_item">
+                        <div class="clients_badge" style="background-color: black;"></div>
+                        <span class="item-name">Blackrock Holdings</span>
+                        <span class="badge --list_bg">1</span>
+                    </li>
+                    <li class="sumlist_item">
+                        <div class="clients_badge" style="background-color: #f5f5f4; color: black;">VG</div>
+
+                        <span class="item-name">Vanguard Global</span>
+                        <span class="badge --list_bg">1</span>
+                    </li>
+                    <li class="sumlist_item">
+                        <div class="clients_badge">SM</div>
+                        <span class="item-name">State Street <br> Management</span>
+                        <span class="badge --list_bg">1</span>
+                    </li>
+                    <li class="sumlist_item">
+                        <div class="clients_badge">JC</div>
+                        <span class="item-name">JP Morgan Capital</span>
+                        <span class="badge --list_bg">1</span>
+                    </li>
+                    <li class="sumlist_item">
+                        <div class="clients_badge" style="background-color: black;"></div>
+                        <span class="item-name">Fidelity Investments</span>
+                        <span class="badge --list_bg">1</span>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
-    <!--  -->
-    <div class="activities_grid">
-        <section class="activities_tab">
-            <h4>Recent Activities</h4>
-            <p class="para_head">All client interactions from calls to emails</p>
-            <div class="activities_wrp">
-                <div class="unitab-container">
-                    <div class="unitab active" data-tab="all"> <img src="assests/images/icons/calendar.svg" alt="cal">
-                        All Activities <span class="badge">5</span></div>
-                    <div class="unitab" data-tab="calls"><img src="assests/images/icons/call2.svg" alt="cal"> Calls
-                        <span class="badge">1</span>
-                    </div>
-                    <div class="unitab" data-tab="emails"> <img src="assests/images/icons/send.svg" alt="cal">Emails
-                        <span class="badge">1</span>
-                    </div>
-                    <div class="unitab" data-tab="meetings"> <img src="assests/images/icons/user.svg" alt="cal">Meetings
-                        <span class="badge">1</span>
-                    </div>
-                    <div class="unitab" data-tab="reports"> <img src="assests/images/icons/research.svg"
-                            alt="cal">Reports
-                        <span class="badge">1</span>
-                    </div>
-                    <div class="unitab" data-tab="notes"> <img src="assests/images/icons/note.svg" alt="cal">Notes
-                        <span class="badge">0</span>
-                    </div>
-                </div>
-                <div class="select_box_main">
-                    <select name="" class="select_box">
-                        <option selected disabled>All Client</option>
-                        <option>Example 1</option>
-                        <option>Example 2</option>
-                        <option>Example 3</option>
-                    </select>
-                </div>
-            </div>
 
-            <div class="unitab-content active" id="all">
-                <section class="activity_grid">
-                    <div class="mb_bottom">
-                        <div class="activity_main">
-                            <img src="assests/images/icons/call2.svg" alt="call">
-                            <div>
-                                <p class="text_ml">Call with Blackrock Holdings<br>
-                                    <span class="act_with"> with</span> <strong class="act_strng"> Blackrock
-                                        Holdings</strong>
-                                </p>
-                                <p class="text-act --txt">Discussed Q3 investment strategy and research needs</p>
-                                <p class="text-act">today at 9:28 AM</p>
-                            </div>
-                            <div class="activity_icons">
-                                <img src="assests/images/icons/call2.svg" alt="call">
-                                <span>Call</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--  -->
-                    <div class="mb_bottom">
-                        <div class="activity_main">
-                            <img src="assests/images/icons/research.svg" alt="report">
-                            <div>
-                                <p class="text_ml">Research Report Sent to Vanguard Global<br>
-                                    <span class="act_with"> with</span> <strong class="act_strng"> Vanguard
-                                        Global</strong>
-                                </p>
-                                <p class="text-act --txt">Q3 Tech Sector Analysis delivered via email</p>
-                                <p class="text-act">yesterday at 11:28 AM</p>
-                            </div>
-                            <div class="activity_icons">
-                                <img src="assests/images/icons/research.svg" alt="report">
-                                <span>Report</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--  -->
-                    <div class="mb_bottom">
-                        <div class="activity_main">
-                            <img src="assests/images/icons/user_icon.svg" alt="Meeting">
-                            <div>
-                                <p class="text_ml">Meeting with Fidelity Investments<br>
-                                    <span class="act_with"> with</span> <strong class="act_strng"> Fidelity
-                                        Investments</strong>
-                                </p>
-                                <p class="text-act --txt">Quarterly portfolio review and market update</p>
-                                <p class="text-act">03/15/2023</p>
-                            </div>
-                            <div class="activity_icons">
-                                <img src="assests/images/icons/user.svg" alt="Meeting">
-                                <span>Meeting</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--  -->
-                    <div class="mb_bottom">
-                        <div class="activity_main">
-                            <img src="assests/images/icons/call2.svg" alt="call">
-                            <div>
-                                <p class="text_ml">Call with Blackrock Holdings<br>
-                                    <span class="act_with"> with</span> <strong class="act_strng"> Blackrock
-                                        Holdings</strong>
-                                </p>
-                                <p class="text-act --txt">Discussed Q3 investment strategy and research needs</p>
-                                <p class="text-act">today at 9:28 AM</p>
-                            </div>
-                            <div class="activity_icons">
-                                <img src="assests/images/icons/call2.svg" alt="call">
-                                <span>Call</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--  -->
-                    <div class="mb_bottom">
-                        <div class="activity_main">
-                            <img src="assests/images/icons/send.svg" alt="email">
-                            <div>
-                                <p class="text_ml">Follow-up Email to State Street Management<br>
-                                    <span class="act_with"> with</span> <strong class="act_strng">State Street
-                                        Management</strong>
-                                </p>
-                                <p class="text-act --txt">Sent information about new ESG investment opportunities</p>
-                                <p class="text-act">03/14/2023</p>
-                            </div>
-                            <div class="activity_icons">
-                                <img src="assests/images/icons/send.svg" alt="email">
-                                <span>Email</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--  -->
-                    <div class="mb_bottom">
-                        <div class="activity_main">
-                            <img src="assests/images/icons/calendar.svg" alt="task">
-                            <div>
-                                <p class="text_ml">Deal Update for JP Morgan Capital<br>
-                                    <span class="act_with"> with</span> <strong class="act_strng">JP Morgan
-                                        Capital</strong>
-                                </p>
-                                <p class="text-act --txt">Updated pipeline status to "Negotiation" stage</p>
-                                <p class="text-act">03/12/2023</p>
-                            </div>
-                            <div class="activity_icons">
-                                <img src="assests/images/icons/calendar.svg" alt="task">
-                                <span>Task</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <!--  -->
-            <div class="unitab-content" id="calls">
-                <h2>calls</h2>
-                <p>This is the content for calls leads.</p>
-            </div>
-            <div class="unitab-content" id="emails">
-                <h2>emails</h2>
-                <p>This is the content for emails leads.</p>
-            </div>
-            <div class="unitab-content" id="meetings">
-                <h2>meetings</h2>
-                <p>This is the content for meetingss.</p>
-            </div>
-            <div class="unitab-content" id="reports">
-                <h2>reports</h2>
-                <p>This is the content for reports stage.</p>
-            </div>
-            <div class="unitab-content" id="notes">
-                <h2>notes</h2>
-                <p>This is the content for reports stage.</p>
-            </div>
-
-        </section>
-
-        <section class="summary_container_main">
-            <div class="summary_container">
-                <h3>Activity Summary</h3>
-                <p>Last 30 days</p>
-
-                <div class="section">
-                    <ul class="list_main">
-                        <li class="sumlist_item">
-                            <img src="assests/images/icons/call2.svg" alt="call">
-                            <span class="item-name">Calls</span>
-                            <span class="badge --list_bg">1</span>
-                        </li>
-                        <li class="sumlist_item">
-                            <img src="assests/images/icons/send.svg" alt="report">
-                            <span class="item-name">Emails</span>
-                            <span class="badge --list_bg">1</span>
-                        </li>
-                        <li class="sumlist_item">
-                            <img src="assests/images/icons/call2.svg" alt="Meeting">
-                            <span class="item-name">Meetings</span>
-                            <span class="badge --list_bg">1</span>
-                        </li>
-                        <li class="sumlist_item">
-                            <img src="assests/images/icons/research.svg" alt="report">
-                            <span class="item-name">Reports</span>
-                            <span class="badge --list_bg">1</span>
-                        </li>
-                        <li class="sumlist_item">
-                            <img src="assests/images/icons/note.svg" alt="note">
-                            <span class="item-name">Notes</span>
-                            <span class="badge --list_bg">0</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="summary_container">
-                <h3>Top Clients</h3>
-                <p>Most interactions this month</p>
-                <div class="section">
-                    <ul class="list_main">
-                        <li class="sumlist_item">
-                            <div class="clients_badge" style="background-color: black;"></div>
-                            <span class="item-name">Blackrock Holdings</span>
-                            <span class="badge --list_bg">1</span>
-                        </li>
-                        <li class="sumlist_item">
-                            <div class="clients_badge" style="background-color: #f5f5f4; color: black;">VG</div>
-
-                            <span class="item-name">Vanguard Global</span>
-                            <span class="badge --list_bg">1</span>
-                        </li>
-                        <li class="sumlist_item">
-                            <div class="clients_badge">SM</div>
-                            <span class="item-name">State Street <br> Management</span>
-                            <span class="badge --list_bg">1</span>
-                        </li>
-                        <li class="sumlist_item">
-                            <div class="clients_badge">JC</div>
-                            <span class="item-name">JP Morgan Capital</span>
-                            <span class="badge --list_bg">1</span>
-                        </li>
-                        <li class="sumlist_item">
-                            <div class="clients_badge" style="background-color: black;"></div>
-                            <span class="item-name">Fidelity Investments</span>
-                            <span class="badge --list_bg">1</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-    </div>
-    <script>
-        const tabs = document.querySelectorAll('.unitab');
-        const contents = document.querySelectorAll('.unitab-content');
-
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                tabs.forEach(t => t.classList.remove('active'));
-                contents.forEach(c => c.classList.remove('active'));
-
-                tab.classList.add('active');
-                document.getElementById(tab.dataset.tab).classList.add('active');
-            });
-        });
-    </script>
+</div>
+<script src="assests/js/js-main.js"></script>
 
 </body>
 

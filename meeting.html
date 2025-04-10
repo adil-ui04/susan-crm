@@ -1,169 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
+<link rel="stylesheet" href="assests/css/meeting.css">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assests/css/meeting.css">
-</head>
+<section class="common_title">
+    <div>
+        <h3>Meetings</h3>
+        <p>Schedule and manage client meetings</p>
+    </div>
+    <div>
+        <button class="comm_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-calendar h-4 w-4 mr-2" data-replit-metadata="client/src/pages/Meetings.tsx:516:18"
+                data-component-name="Calendar">
+                <path d="M8 2v4"></path>
+                <path d="M16 2v4"></path>
+                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                <path d="M3 10h18"></path>
+            </svg>
+            Schedule Meeting</button>
+    </div>
+</section>
 
-<body>
-    <section class="common_title">
-        <div>
-            <h3>Meetings</h3>
-            <p>Schedule and manage client meetings</p>
+<div class="meet_grid">
+    <section class="meet_tab">
+        <h4>Task Management</h4>
+        <p>Manage and complete your tasks</p>
+        <!-- nav tab -->
+        <div class="meet_flex">
+            <div>
+                <div class="unitab-container">
+                    <div class="unitab active" data-tab="upcoming"> Upcoming<span class="badge">5</span></div>
+                    <div class="unitab" data-tab="today"> Today <span class="badge">1</span></div>
+                    <div class="unitab" data-tab="week">This Week <span class="badge">1</span></div>
+                    <div class="unitab" data-tab="month"> This Month <span class="badge">1</span></div>
+                    <div class="unitab" data-tab="past">Past<span class="badge">1</span></div>
+                    <div class="unitab" data-tab="all"> All <span class="badge">1</span></div>
+                </div>
+            </div>
+            <select name="">
+                <option value="" selected disabled> All Clients</option>
+                <option value="">Example 1</option>
+                <option value="">Example 2</option>
+            </select>
         </div>
-        <div>
-            <button class="comm_btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide lucide-calendar h-4 w-4 mr-2"
-                    data-replit-metadata="client/src/pages/Meetings.tsx:516:18" data-component-name="Calendar">
-                    <path d="M8 2v4"></path>
-                    <path d="M16 2v4"></path>
-                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
-                    <path d="M3 10h18"></path>
-                </svg>
-                Schedule Meeting</button>
+        <!-- nav content -->
+        <div class="unitab-content active" id="upcoming">
+            <div class="meet_sch">
+                <p>No meetings found</p>
+                <p class="meet_btn">
+                    <img src="assests/images/icons/calendar.svg" alt="" width="15">
+                    Schedule your first Meeting
+                </p>
+            </div>
+        </div>
+        <div class="unitab-content" id="today">
+            today
+        </div>
+        <div class="unitab-content" id="week">
+            week
+        </div>
+        <div class="unitab-content" id="month">
+            month
+        </div>
+        <div class="unitab-content" id="past">
+            month
+        </div>
+        <div class="unitab-content" id="all">
+            all
+        </div>
+
+    </section>
+
+    <section>
+        <div class="meet_summary">
+            <h3>Meeting Stats</h3>
+            <div class="tlist_btm">
+                <ul class="tlist_main">
+                    <p>Today's Meetings</p>
+                    <li class="tlist_item">
+
+                        <span class="tlist_name">0</span>
+                        <span class="mbadge" style="background-color: #dbeafe;"><img
+                                src="assests/images/icons/calendar.svg" alt="calendar" width="15px"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="tlist_btm">
+                <ul class="tlist_main">
+                    <p>This Week</p>
+                    <li class="tlist_item">
+
+                        <span class="tlist_name">1</span>
+                        <span class="mbadge" style="background-color: #dcfce7;"><img src="assests/images/icons/week.svg"
+                                alt="wrong" width="15px"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="meet_summary ">
+            <h3>Client Engagement</h3>
+            <p class="smtext">Meeting frequency by client</p>
+
+            <div class="section">
+                <ul class="tlist_main">
+                    <li class="tlist_item2">
+                        <span class="mbadge">FI</span>
+                        <span class="tlist2">Fidelity <br> Investments
+                        </span>
+                        <span class="m_badge">1 meeting</span>
+                    </li>
+                    <li class="tlist_item2">
+                        <span class="mbadge">BH</span>
+                        <span class="tlist2">Blackrock <br> Holdings</span>
+                        <span class="m_badge">0 meetings</span>
+                    </li>
+                    <li class="tlist_item2">
+                        <span class="mbadge">VG</span>
+                        <span class="tlist2">Vanguard Global
+                        </span>
+                        <span class="m_badge">0 meetings</span>
+                    </li>
+                    <li class="tlist_item2">
+                        <span class="mbadge">SM</span>
+                        <span class="tlist2">State Street <br> Management
+                        </span>
+                        <span class="m_badge">0 meetings</span>
+                    </li>
+                    <li class="tlist_item2">
+                        <span class="mbadge">JP</span>
+                        <span class="tlist2"> JP Morgan <br> Capital
+                        </span>
+                        <span class="m_badge">0 meetings</span>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </section>
 
-    <div class="meet_grid">
-        <section class="meet_tab">
-            <h4>Task Management</h4>
-            <p>Manage and complete your tasks</p>
-            <!-- nav tab -->
-            <div class="meet_flex">
-                <div>
-                    <div class="unitab-container">
-                        <div class="unitab active" data-tab="upcoming"> Upcoming<span class="badge">5</span></div>
-                        <div class="unitab" data-tab="today"> Today <span class="badge">1</span></div>
-                        <div class="unitab" data-tab="week">This Week <span class="badge">1</span></div>
-                        <div class="unitab" data-tab="month"> This Month <span class="badge">1</span></div>
-                        <div class="unitab" data-tab="past">Past<span class="badge">1</span></div>
-                        <div class="unitab" data-tab="all"> All <span class="badge">1</span></div>
-                    </div>
-                </div>
-                <select name="">
-                    <option value="" selected disabled> All Clients</option>
-                    <option value="">Example 1</option>
-                    <option value="">Example 2</option>
-                </select>
-            </div>
-            <!-- nav content -->
-            <div class="unitab-content active" id="upcoming">
-                <div class="meet_sch">
-                    <p>No meetings found</p>
-                    <p class="comm_btn --meet_btn">
-                        <img src="assests/images/icons/calendar.svg" alt="">
-                        Schedule your first Meeting
-                    </p>
-                </div>
-            </div>
-            <div class="unitab-content" id="today">
-                today
-            </div>
-            <div class="unitab-content" id="week">
-                week
-            </div>
-            <div class="unitab-content" id="month">
-                month
-            </div>
-            <div class="unitab-content" id="past">
-                month
-            </div>
-            <div class="unitab-content" id="all">
-                all
-            </div>
+</div>
 
-        </section>
-
-        <section>
-            <div class="meet_summary">
-                <h3>Meeting Stats</h3>
-                <div class="tlist_btm">
-                    <ul class="tlist_main">
-                        <p>Today's Meetings</p>
-                        <li class="tlist_item">
-
-                            <span class="tlist_name">0</span>
-                            <span class="mbadge" style="background-color: #dbeafe;"><img
-                                    src="assests/images/icons/calendar.svg" alt="calendar" width="15px"></span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="tlist_btm">
-                    <ul class="tlist_main">
-                        <p>This Week</p>
-                        <li class="tlist_item">
-
-                            <span class="tlist_name">1</span>
-                            <span class="mbadge" style="background-color: #dcfce7;"><img
-                                    src="assests/images/icons/week.svg" alt="wrong" width="15px"></span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-
-            <div class="meet_summary ">
-                <h3>Client Engagement</h3>
-                <p class="smtext">Meeting frequency by client</p>
-
-                <div class="section">
-                    <ul class="tlist_main">
-                        <li class="tlist_item2">
-                            <span class="mbadge">FI</span>
-                            <span class="tlist2">Fidelity <br> Investments
-                            </span>
-                            <span class="m_badge">1 meeting</span>
-                        </li>
-                        <li class="tlist_item2">
-                            <span class="mbadge">BH</span>
-                            <span class="tlist2">Blackrock <br> Holdings</span>
-                            <span class="m_badge">0 meetings</span>
-                        </li>
-                        <li class="tlist_item2">
-                            <span class="mbadge">VG</span>
-                            <span class="tlist2">Vanguard Global
-                            </span>
-                            <span class="m_badge">0 meetings</span>
-                        </li>
-                        <li class="tlist_item2">
-                            <span class="mbadge">SM</span>
-                            <span class="tlist2">State Street <br> Management
-                            </span>
-                            <span class="m_badge">0 meetings</span>
-                        </li>
-                        <li class="tlist_item2">
-                            <span class="mbadge">JP</span>
-                            <span class="tlist2"> JP Morgan <br> Capital
-                            </span>
-                            <span class="m_badge">0 meetings</span>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </section>
-
-    </div>
-
-    <script>
-        const tabs = document.querySelectorAll('.unitab');
-        const contents = document.querySelectorAll('.unitab-content');
-
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                tabs.forEach(t => t.classList.remove('active'));
-                contents.forEach(c => c.classList.remove('active'));
-
-                tab.classList.add('active');
-                document.getElementById(tab.dataset.tab).classList.add('active');
-            });
-        });
-    </script>
+<script src="assests/js/js-main.js"></script>
 
 </body>
 

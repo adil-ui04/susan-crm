@@ -16,7 +16,6 @@
   --gray: #dadada;
   --white: #ffff;
   --smtext: #737373;
-  /* --ssmtext: #78726d; */
 }
 
 body {
@@ -285,7 +284,7 @@ div#DataTables_Table_0_info {
     margin-top: unset;
   }
   .--nav_search {
-    margin-top: 20px;
+    width: 200px;
   }
   div.dt-container div.dt-layout-row:not(.dt-layout-table) {
     display: flex !important;
@@ -295,7 +294,7 @@ div#DataTables_Table_0_info {
 /* new dashboard crm */
 
 .content-container {
-  padding: 20px 50px 20px 20px;
+  padding: 20px;
 }
 
 .smtext {
@@ -314,6 +313,7 @@ div#DataTables_Table_0_info {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .common_title select {
@@ -322,7 +322,19 @@ div#DataTables_Table_0_info {
   border-radius: 8px;
   font-size: 14px;
   outline: none;
+  background-color: var(--white);
 }
+select {
+  padding: 0px 12px;
+  height: 37px;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  font-size: 14px !important;
+  outline: none;
+  font-weight: 400 !important;
+  background-color: var(--white);
+}
+
 .dt-length,
 .dt-search {
   display: none;
@@ -407,11 +419,11 @@ div#DataTables_Table_0_info {
 }
 .unitab img {
   width: 15px;
+  filter: opacity(0.5);
 }
-
 .unitab.active {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--white);
+  color: var(--black);
   font-weight: bold;
   border: 1px solid #ddd;
 }
@@ -456,15 +468,21 @@ div#DataTables_Table_0_info {
 /* tab universal end */
 
 @media only screen and (max-width: 1024px) {
+  .content-container {
+    padding: 20px;
+  }
 }
 
 @media only screen and (max-width: 475px) {
   .content-container {
-    padding: unset;
+    padding: 15px;
   }
   .page_container {
     padding-left: 5px;
     padding-right: 9px;
+  }
+  .--universal_table {
+    padding-right: 7px;
   }
 }
 /*  */
@@ -477,7 +495,6 @@ div#DataTables_Table_0_info {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
   flex-wrap: wrap;
 }
 /*  */

@@ -9,6 +9,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: left;
+  background-color: var(--white);
 }
 .dashcard_main h3 {
   font-size: 14px;
@@ -18,7 +19,6 @@
 
 .dashcard_main h1 {
   font-size: 24px;
-  font-weight: bold !important;
 }
 
 .dashcard_title {
@@ -34,6 +34,13 @@
   height: 3px !important;
 }
 
+.fixed_head {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--white);
+}
+
 /* Sales Pipeline */
 .section_wrp {
   display: grid;
@@ -46,13 +53,14 @@
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   height: 100%;
+  background-color: var(--white);
 }
 
 .total_subtitle {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
-  color: #525252;
+  color: var(--smtext);
 }
 
 .total_main h2 {
@@ -74,7 +82,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 14px;
-  color: #737373;
+  color: var(--smtext);
   font-weight: 500;
 }
 
@@ -83,6 +91,7 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--white);
 }
 .recent_title {
   display: flex;
@@ -114,6 +123,7 @@
 .recent_activity {
   margin-bottom: 15px;
   display: flex;
+  flex-wrap: wrap;
   gap: 13px;
 }
 .timestamp {
@@ -126,11 +136,13 @@
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   height: max-content;
+  background-color: var(--white);
 }
 
 .tble_flex {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .--tble_badge {
@@ -149,6 +161,7 @@ table.dataTable.display > tbody > tr:nth-child(odd) > * {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   height: fit-content;
+  background-color: var(--white);
 }
 
 .upcoming_header {
@@ -187,8 +200,8 @@ table.dataTable.display > tbody > tr:nth-child(odd) > * {
 }
 
 .task-date {
-  background: lightgray;
-  color: black;
+  background: var(--lightgreen);
+  color: var(--black);
   padding: 4px 8px;
   font-size: 12px;
   border-radius: 4px;
@@ -207,6 +220,7 @@ button.comm_btn.--view_btn {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   height: fit-content;
   margin-top: 30px;
+  background-color: var(--white);
 }
 .box_shadow h3 {
   margin-bottom: unset;
@@ -251,7 +265,7 @@ button.comm_btn.--view_btn {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--gray);
   border-radius: 8px;
   text-align: center;
   cursor: pointer;
@@ -272,7 +286,7 @@ button.comm_btn.--view_btn {
 
 @media only screen and (max-width: 1024px) {
   .section_wrp {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   .dashboard_card {
     grid-template-columns: 1fr 1fr;

@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: self-start;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .meet_grid {
@@ -10,7 +12,7 @@
   gap: 20px;
 }
 .meet_tab {
-  background-color: #fff;
+  background-color: var(--white);
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 20px;
@@ -30,9 +32,10 @@
   color: var(--white);
   font-size: 12px;
   margin-right: 12px;
+  flex-wrap: wrap;
 }
 .meet_summary {
-  background-color: #fff;
+  background-color: var(--white);
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 20px;
@@ -50,8 +53,8 @@
 .tlist_main {
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--gray);
+  background-color: var(--white);
 }
 .tlist_main p {
   font-size: 14px;
@@ -60,6 +63,7 @@
 }
 .tlist_item {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .tlist_item img,
@@ -74,6 +78,7 @@
 .tlist_item2 {
   display: flex;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 .tlist2 {
   font-weight: 400 !important;
@@ -91,22 +96,53 @@
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 .meet_sch p {
   color: var(--smtext);
   margin-bottom: 10px;
 }
-.--meet_btn {
+.meet_btn {
   background-color: var(--white);
-  color: var(--black);
-  border: 1px solid var(--gray);
-  width: fit-content;
   color: var(--black) !important;
+  border: none;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+  border: 1px solid var(--gray);
 }
+
 .m_badge {
   border-radius: 9999px;
   font-size: 13px;
   padding: 2px 12px;
   border: 1px solid var(--gray);
   height: fit-content;
+}
+
+@media only screen and (max-width: 1024px) {
+  .meet_grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .tlist_item2 {
+    gap: 4px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .meet_flex select {
+    width: 100%;
+  }
+  .meet_tab {
+    margin-top: 15px;
+  }
 }

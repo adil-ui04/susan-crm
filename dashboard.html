@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="assests/css/dashboard.css">
+
 <section class="common_title">
     <div>
         <h3>SUSAN Dashboard</h3>
@@ -14,7 +15,9 @@
         <button class="comm_btn">New Activity</button>
     </div>
 </section>
-<!--  -->
+<!--title end  -->
+
+<!-- dashboard card start -->
 <section class="dashboard_card">
     <div class="dashcard_main">
         <div class="dashcard_title">
@@ -37,6 +40,7 @@
             <div class="progress " style="width: 50%;"></div>
         </div>
     </div>
+    <!--  -->
     <div class="dashcard_main">
         <div class="dashcard_title">
             <h3>Deal Pipeline </h3>
@@ -48,6 +52,7 @@
             <div class="progress " style="width: 0;"></div>
         </div>
     </div>
+    <!--  -->
     <div class="dashcard_main">
         <div class="dashcard_title">
             <h3>Research Engagement </h3>
@@ -61,7 +66,9 @@
     </div>
 
 </section>
-<!--  -->
+<!-- dashbaord card end -->
+
+<!-- Sales section start -->
 <div class="section_wrp m_top">
     <section class="total_main ">
         <h2>Sales Pipeline</h2>
@@ -80,7 +87,7 @@
                 <div class="progress" style="width: 40%;"></div>
             </div>
         </div>
-
+        <!--  -->
         <div class="m_bottom">
             <div class="total_stage">
                 <div>
@@ -92,6 +99,7 @@
                 <div class="progress" style="width: 80%;"></div>
             </div>
         </div>
+        <!--  -->
         <div class="m_bottom">
             <div class="total_stage">
                 <div>
@@ -103,7 +111,7 @@
                 <div class="progress" style="width: 60%;"></div>
             </div>
         </div>
-
+        <!--  -->
         <div class="m_bottom">
             <div class="total_stage">
                 <div>
@@ -115,7 +123,7 @@
                 <div class="progress" style="width: 10%;"></div>
             </div>
         </div>
-
+        <!--  -->
         <div class="m_bottom">
             <div class="total_stage">
                 <div>
@@ -132,13 +140,14 @@
             <span>Total Pipeline Value</span>
             <span style="font-size: 18px;color: black;">$3,105,000</span>
         </div>
-
     </section>
+    <!-- Sales section end -->
 
+    <!-- Recent Activities start -->
     <section class="recent_main">
         <div class="recent_title">
             <span>Recent Activities</span>
-            <a href=""> <span>View All</span></a>
+            <a href="" class="ajax-link" data-page="meeting.html"> <span>View All</span></a>
         </div>
 
         <div class="recent_activity">
@@ -188,8 +197,9 @@
 
     </section>
 </div>
-<!--  -->
+<!-- Recent Activities end -->
 
+<!-- Clients table start -->
 <div class="section_wrp m_top">
     <section class="dashtble_main">
         <div class="common_title">
@@ -207,10 +217,10 @@
         </div>
         <div class="table_responsive --universal_table">
             <table class="DataTable display" style="width: 100%;">
-                <thead>
+                <thead class="fixed_head">
                     <tr>
-                        <th>Client</th>
-                        <th>AUM</th>
+                        <th data-priority="1">Client</th>
+                        <th data-priority="2">AUM</th>
                         <th>Revenue YTD</th>
                         <th>Status</th>
                         <th>Last Contact</th>
@@ -219,10 +229,12 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="tble_flex">
-                            <div class="clients_badge --tble_badge" style="background-color: black;"></div>
-                            <div>
-                                <strong> Blackrock Holdings</strong><br><span class="smtext">Asset Management</span>
+                        <td>
+                            <div class="tble_flex">
+                                <div class="clients_badge --tble_badge" style="background-color: black;"></div>
+                                <div>
+                                    <strong> Blackrock Holdings</strong><br><span class="smtext">Asset Management</span>
+                                </div>
                             </div>
                         </td>
                         <td><span>$8.5B</span></td>
@@ -232,11 +244,13 @@
                         <td><a href="#">View</a></td>
                     </tr>
                     <tr>
-                        <td class="tble_flex">
-                            <div class="clients_badge --tble_badge" style="background-color: #f5f5f4"></div>
-                            <div>
-                                <strong> Vanguard Global</strong><br><span class="smtext">Investment
-                                    Management</span>
+                        <td>
+                            <div class="tble_flex">
+                                <div class="clients_badge --tble_badge" style="background-color: #f5f5f4"></div>
+                                <div>
+                                    <strong> Vanguard Global</strong><br><span class="smtext">Investment
+                                        Management</span>
+                                </div>
                             </div>
                         </td>
                         <td><span>$5.7B</span></td>
@@ -246,12 +260,14 @@
                         <td><a href="#">View</a></td>
                     </tr>
                     <tr>
-                        <td class="tble_flex">
-                            <div class="clients_badge --tble_badge" style="background-color: white;color:black">SM
-                            </div>
-                            <div>
-                                <strong> State Street Management</strong><br><span class="smtext">Pension
-                                    Fund</span>
+                        <td>
+                            <div class="tble_flex">
+                                <div class="clients_badge --tble_badge" style="background-color: white;color:black">SM
+                                </div>
+                                <div>
+                                    <strong> State Street Management</strong><br><span class="smtext">Pension
+                                        Fund</span>
+                                </div>
                             </div>
                         </td>
                         <td><span>$4.2B</span></td>
@@ -261,10 +277,12 @@
                         <td><a href="#">View</a></td>
                     </tr>
                     <tr>
-                        <td class="tble_flex">
-                            <div class="clients_badge --tble_badge" style="background-color: #e5e5e5">JC</div>
-                            <div>
-                                <strong>JP Morgan Capital</strong><br><span class="smtext">Investment Bank</span>
+                        <td>
+                            <div class="tble_flex">
+                                <div class="clients_badge --tble_badge" style="background-color: #e5e5e5">JC</div>
+                                <div>
+                                    <strong>JP Morgan Capital</strong><br><span class="smtext">Investment Bank</span>
+                                </div>
                             </div>
                         </td>
                         <td><span>$6.9B</span></td>
@@ -274,12 +292,13 @@
                         <td><a href="#">View</a></td>
                     </tr>
                     <tr>
-                        <td class="tble_flex">
-                            <div class="clients_badge --tble_badge" style="background-color: black;"></div>
-                            <div>
-                                <strong> Fidelity Investments</strong><br><span class="smtext">Asset
-                                    Management</span>
-                            </div>
+                        <td>
+                            <div class="tble_flex">
+                                <div class="clients_badge --tble_badge" style="background-color: black;"></div>
+                                <div>
+                                    <strong> Fidelity Investments</strong><br><span class="smtext">Asset
+                                        Management</span>
+                                </div>
                         </td>
                         </td>
                         <td><span>$7.1B</span></td>
@@ -293,13 +312,16 @@
             </table>
         </div>
     </section>
+    <!-- Clients table end -->
+
+    <!-- Upcoming Tasks start -->
     <div class="box_shadow2">
         <div class="upcoming_main">
             <div class="upcoming_header">
                 <span>Upcoming Tasks</span>
                 <span class="add_task">Add Task</span>
             </div>
-
+            <!--  -->
             <div class="upcoming_task">
                 <section class="upcom_main">
                     <input type="checkbox" name="activity" value="blackrock">
@@ -312,6 +334,7 @@
                     </div>
                 </section>
             </div>
+            <!--  -->
             <div class="upcoming_task">
                 <section class="upcom_main">
                     <input type="checkbox" name="activity" value="blackrock">
@@ -324,6 +347,7 @@
                     </div>
                 </section>
             </div>
+            <!--  -->
             <div class="upcoming_task">
                 <section class="upcom_main">
                     <input type="checkbox" name="activity" value="blackrock">
@@ -336,6 +360,7 @@
                     </div>
                 </section>
             </div>
+            <!--  -->
             <div class="upcoming_task">
                 <section class="upcom_main">
                     <input type="checkbox" name="activity" value="blackrock">
@@ -348,6 +373,7 @@
                     </div>
                 </section>
             </div>
+            <!--  -->
             <div class="upcoming_task">
                 <section class="upcom_main">
                     <input type="checkbox" name="activity" value="blackrock">
@@ -362,9 +388,10 @@
             </div>
             <hr>
             <button class="comm_btn --view_btn">View All Tasks</button>
-
         </div>
+        <!-- Upcoming Tasks end -->
 
+        <!-- quick action start -->
         <div class="box_shadow">
             <h3>Quick Actions</h3>
             <div class="quick_container">
@@ -385,13 +412,10 @@
                     <p>Send Update</p>
                 </div>
             </div>
-
         </div>
-
-
         </section>
     </div>
-    <!--  -->
+    <!-- quick action start -->
 
     </body>
 
